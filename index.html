@@ -10,104 +10,159 @@
       href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Edu+VIC+WA+NT+Beginner&family=Josefin+Sans&family=Pacifico&display=swap"
       rel="stylesheet"
     />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" href="img/favicon.jpg" />
     <link rel="stylesheet" href="css/estilos.css" />
 
     <title>Home</title>
   </head>
 
-  <body class="bodyIndex">
-    <!-- INICIO HEADER -->
-    <header class="header">
-      <img class="logo" src="img/locoTrans.png" alt="logoBurGrill" />
-      <nav class="links">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="pages/takeAway.html">Take Away</a></li>
-          <li><a href="pages/ubicacion.html">Ubicacion</a></li>
-          <li><a href="pages/encuesta.html">Encuesta</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="social">
-        <img src="img/cart.svg" alt="imagen carrito" />
-        <img src="img/instagram.svg" alt="imagen ig" />
-        <img src="img/Whatsapp.svg" alt="imagen whatsapp" />
+  <!-- INICIO HEADER -->
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light nav-pills">
+      <div class="container-fluid">
+        <span>
+          <img
+            class="navbar-brand logo"
+            src="../img/locoTrans.png"
+            alt="logoBurGrill"
+          />
+        </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/takeAway.html">Take away</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/encuesta.html">Encuesta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <span class="navbar-text">
+            <img src="img/cart.svg" alt="imagen carrito" />
+            <img src="img/instagram.svg" alt="imagen ig" />
+            <img src="img/Whatsapp.svg" alt="imagen whatsapp" />
+          </span>
+        </div>
       </div>
-    </header>
+    </nav>
     <!-- FINAL HEADER -->
 
     <!-- INICIO CONTENIDO PRINCIPAL -->
     <div class="tituloPrincipal">
-      <h1>Hamburguesas premium hechas en casa</h1>
+      <h1>Burgrill</h1>
     </div>
 
-    <section class="videoInicio">
-      <iframe
-        width="900"
-        height="400"
-        src="https://www.youtube.com/embed/dA0VGEbbw4g"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </section>
-
-    <section class="historia">
-      <h2>Acerca de nosotros</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-        veritatis incidunt libero excepturi non reprehenderit recusandae
-        voluptate obcaecati velit alias eum perferendis ab vero quam? Laborum ab
-        sint qui veritatis?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        voluptatibus incidunt id corrupti doloremque a repellat maiores veniam
-        placeat suscipit provident, aut porro exercitationem quisquam accusamus
-        impedit libero amet ratione!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        voluptatibus incidunt id corrupti doloremque a repellat maiores veniam
-        placeat suscipit provident, aut porro exercitationem quisquam accusamus
-        impedit libero amet ratione!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        voluptatibus incidunt id corrupti doloremque a repellat maiores veniam
-        placeat suscipit provident, aut porro exercitationem quisquam accusamus
-        impedit libero amet ratione!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        voluptatibus incidunt id corrupti doloremque a repellat maiores veniam
-        placeat suscipit provident, aut porro exercitationem quisquam accusamus
-        impedit libero amet ratione!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-        voluptatibus incidunt id corrupti doloremque a repellat maiores veniam
-        placeat suscipit provident, aut porro exercitationem quisquam accusamus
-        impedit libero amet ratione!
-      </p>
-      <div>
-        <img src="img/cart.svg" alt="imagen carrito" />
-        <img src="img/instagram.svg" alt="imagen ig" />
-        <img src="img/Whatsapp.svg" alt="imagen whatsapp" />
+    <!-- Carousel -->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/burger1.jpg"
+            class="d-block w-100 imgCarusel"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/burger2.jpg"
+            class="d-block w-100 imgCarusel"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/burger3.jpg"
+            class="d-block w-100 imgCarusel"
+            alt="..."
+          />
+        </div>
       </div>
-    </section>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Fin del carusel -->
+
+    <div class="row">
+      <div class="col-xl-6 col-md-6 col-sm-12">
+        <h2 class="tituloHistoria">Historia</h2>
+        <div class="historia">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque
+            accusantium provident numquam inventore quasi harum beatae,
+            quibusdam amet vitae, non quisquam error fuga ex impedit placeat
+            praesentium voluptas deserunt facere?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+            distinctio autem corrupti veritatis quo, aspernatur nesciunt, omnis
+            aut rerum possimus ipsa est pariatur dolor exercitationem ab
+            delectus ad a. Vitae. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Excepturi distinctio autem corrupti veritatis quo,
+            aspernatur nesciunt, omnis aut rerum possimus ipsa est pariatur
+            dolor exercitationem ab delectus ad a. Vitae.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-md-6 col-sm-12">
+        <img class="fotoHistoria" src="img/fotoHistoria.jpg" alt="" />
+      </div>
+    </div>
     <!-- FINAL CONTENIDO PRINCIPAL -->
 
     <!-- INICIO FOOTER -->
-    <section class="fotoHistoria">
-      <img class="fotoHistoria" src="img/fotoHistoria.jpg" alt="fotoHistoria" />
-    </section>
-
     <footer>
       <div>
-        <img class="logo" src="img/locoTrans.png" alt="logo" />
+        <img class="logo" src="../img/locoTrans.png" alt="logo" />
       </div>
       <h4>
         ©Sitio web creado por Franco Spataro - Todos los derechos reservados
@@ -119,5 +174,12 @@
       </div>
     </footer>
     <!-- FINAL FOOTER -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
