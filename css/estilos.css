@@ -1,45 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+*{
+  font-family: 'DM Serif Display', serif;
+}
+
+body{
+  background-image: url("../img/fondoMadera.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/********* Css Index ********/
 .logo{
   width: 6rem;
 }
 
 .container-fluid{
-  background-color:grey;
+  background-color: #432818;
+  border-bottom: #2b0404 solid 2px;
+}
+
+.nav-pills{
+  padding: 0;
+  
 }
 
 .imgCarusel{
   height: 500px;
-}
-
-.tituloPrincipal{
-  text-align: center;
-  margin: 20px;
+  object-fit: cover;
 }
 
 .fotoHistoria{
   width: 98%;
-  height: 98%;
+  height: 500px;
   margin: 2%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .historia{
   display: flex;
   flex-direction: column;
-  background-color: aqua;
-  margin: 40px;
+  border: 1px solid black;
+  margin: 48px;
   text-align: center;
   justify-content: space-around;
 }
 
+.historia p{
+  color: white;
+}
+
 .tituloHistoria{
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: white;
 }
 
 footer {
   background-color: #432818;
   border-top: #2b0404 solid 2px;
-  grid-area: footer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  color: black;
+}
+
+.carousel{
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
