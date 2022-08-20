@@ -15,7 +15,9 @@ body{
 .logo{
   width: 6rem;
 }
-
+.logoH{
+  margin-right: 28rem;
+}
 .container-fluid{
   background-color: #432818;
   border-bottom: #2b0404 solid 2px;
@@ -23,7 +25,15 @@ body{
 
 .nav-pills{
   padding: 0;
-  
+}
+
+.nav-link{
+  color: black;
+  text-transform: uppercase;
+}
+
+.nav-pills .nav-link.active{
+  background-color: rgb(61, 14, 14);
 }
 
 .imgCarusel{
