@@ -84,3 +84,56 @@ footer {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
+
+/********* Css Ubicacion ********/
+.tituloUbicacion{
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.fotoElCazador{
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  max-width: 100%;
+  width: 50%;
+  height: auto;
+  display:block;
+  margin: 40px auto;
+}
+
+.infoUbi{
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #3a1803;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 4%;
+  width: 42%
+}
+
+.infoUbi h2{
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: white;
+}
+
+.infoUbi div a{
+  color: white;
+}
+
+@media (min-width: 320px) and (max-width: 417px) {
+  .infoUbi {
+    width: 100%;
+  }
+  .infoUbi div{
+    margin-bottom: 10px;
+  }
+  .fotoElCazador{
+    display: none;
+  }
+}
