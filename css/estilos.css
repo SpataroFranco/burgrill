@@ -126,7 +126,78 @@ footer {
   color: white;
 }
 
+/********* Css Contacto ********/
+.tituloContacto{
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.parrafos{
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.parrafos h2{
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.imgContacto img{
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #3a1803;
+}
+
+.formContacto{
+  width: 48%;
+  height: 100%;
+  margin-bottom: 20px;
+  background-color: #432818;
+}
+
+.form-group p{
+  color: black;
+  margin: 0;
+  margin-top: 20px;
+}
+
+#estadoCivil {
+  margin-top: 20px;
+}
+
+.estadoCivil{
+  color: black;
+}
+
+.checkNovedades{
+  margin-top: 20px;
+  margin-bottom: 6px;
+  color: black;
+}
+
+.btn-primary{
+  color: black;
+  background-color: #3a1803;
+  border-color: black;
+  
+}
+
+.text-center{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
 @media (min-width: 320px) and (max-width: 417px) {
+  /*Query ubicacion*/
   .infoUbi {
     width: 100%;
   }
@@ -135,5 +206,19 @@ footer {
   }
   .fotoElCazador{
     display: none;
+  }
+
+  /*Query contacto*/
+  .parrafos{
+    text-align: center;
+  }
+
+  .imgContacto{
+    display: none;
+  }
+
+  .formContacto{
+    width: 80%;
+    margin: 0 10% 10% 10%;
   }
 }
