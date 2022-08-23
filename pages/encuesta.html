@@ -11,30 +11,70 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="../img/favicon.jpg" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css" />
 
     <title>Encuesta</title>
   </head>
 
-  <body class="bodyEncuesta">
-    <!-- INICIO HEADER -->
-    <header class="header">
-      <img class="logo" src="../img/locoTrans.png" alt="logoBurGrill" />
-      <nav class="links">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="takeAway.html">Take Away</a></li>
-          <li><a href="ubicacion.html">Ubicacion</a></li>
-          <li><a href="encuesta.html">Encuesta</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="social">
-        <img src="../img/cart.svg" alt="imagen carrito" />
-        <img src="../img/instagram.svg" alt="imagen ig" />
-        <img src="../img/Whatsapp.svg" alt="imagen whatsapp" />
+  <!-- INICIO HEADER -->
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light nav-pills">
+      <div class="container-fluid">
+        <span>
+          <img
+            class="navbar-brand logo logoH"
+            src="../img/locoTrans.png"
+            alt="logoBurGrill"
+          />
+        </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="takeAway.html">Take away</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="encuesta.html">Encuesta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+
+          <span class="navbar-text">
+            <img src="../img/cart.svg" alt="imagen carrito" />
+            <img src="../img/instagram.svg" alt="imagen ig" />
+            <img src="../img/Whatsapp.svg" alt="imagen whatsapp" />
+          </span>
+        </div>
       </div>
-    </header>
+    </nav>
     <!-- FINAL HEADER -->
 
     <!-- INICIO CONTENIDO PRINCIPAL -->
@@ -42,7 +82,7 @@
       <h1>¡Contanos! Queremos saber tu experiencia en Burgrill</h1>
     </div>
 
-    <div class="parrafos">
+    <div class="row parrafos">
       <p>
         Tus respuestas serán tratadas de forma confdencial y utilizadas
         únicamente para mejorar el servicio que te ofrecemos día a día.
@@ -50,104 +90,297 @@
       <p>¡Dejanos tus datos y participá en nuestros próximos sorteos!</p>
     </div>
 
-    <div class="main encuesta">
-      <form action="#">
-        <ol>
-          <li>
-            <label for="genero">Sexo:</label>
-            <select id="genero">
-              <option value="Masculino">Masculino</option>
-              <option value="Femenino">Femenino</option>
-              <option value="Otro">Otro</option>
-            </select>
-          </li>
-          <li>
-            Edad:
-            <input type="radio" name="edad" value="1" />Menor de 18 años
-            <input type="radio" name="edad" value="2" />Entre 19-29 años
-            <input type="radio" name="edad" value="3" />Entre 30-45 años
-            <input type="radio" name="edad" value="4" />Mas de años
-          </li>
-          <li>
-            ¿Cómo nos conociste?
+    <div class="contenedor">
+      <section class="encuesta">
+        <div>
+          <p>Edad:</p>
+          <div class="form-check form-check-inline">
             <input
+              class="form-check-input"
               type="radio"
-              name="descubrimiento"
-              value="1"
-            />Recomendaciones de conocidos
-            <input type="radio" name="descubrimiento" value="2" />Redes sociales
+              name="opcionEdad"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1"
+              >Menor de 18 años</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
             <input
+              class="form-check-input"
               type="radio"
-              name="descubrimiento"
-              value="3"
-            />Folletos/publicidad
-            <input type="radio" name="descubrimiento" value="4" />Otros
-          </li>
-          <li>
-            ¿Cuál es tu hamburguesa favorita?
-            <input type="radio" name="burgerFav" value="1" />burger1
-            <input type="radio" name="burgerFav" value="2" />burger2
-            <input type="radio" name="burgerFav" value="3" />burger3
-            <input type="radio" name="burgerFav" value="4" />burger4
-            <input type="radio" name="burgerFav" value="5" />burger5
-            <input type="radio" name="burgerFav" value="6" />burger6
-          </li>
-          <li>
+              name="opcionEdad"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2"
+              >Entre 19-29 años</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionEdad"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3"
+              >Entre 30-45 años</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionEdad"
+              id="inlineRadio4"
+              value="option4"
+            />
+            <label class="form-check-label" for="inlineRadio4"
+              >Mas de 40 años</label
+            >
+          </div>
+        </div>
+        <div>
+          <p>¿Cómo nos conociste?</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionConociste"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1"
+              >Recomendaciones de conocidos</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionConociste"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2"
+              >Redes sociales</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionConociste"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3"
+              >Folletos/publicidad</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionConociste"
+              id="inlineRadio4"
+              value="option4"
+            />
+            <label class="form-check-label" for="inlineRadio4">Otros</label>
+          </div>
+        </div>
+        <div>
+          <p>¿Cúal es tu hamburguesa favorita?</p>
+          <select class="form-select" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">Burger 1</option>
+            <option value="2">Burger 2</option>
+            <option value="3">Burger 3</option>
+            <option value="4">Burger 4</option>
+            <option value="5">Burger 5</option>
+            <option value="6">Burger 6</option>
+          </select>
+        </div>
+        <div>
+          <p>
             ¿Cómo califcarías la relación calidad/precio de nuestros productos?
-            Muy malo
-            <input type="radio" name="calificacion" value="1" />1
-            <input type="radio" name="calificacion" value="2" />2
-            <input type="radio" name="calificacion" value="3" />3
-            <input type="radio" name="calificacion" value="4" />4
-            <input type="radio" name="calificacion" value="5" />5 Excelente
-          </li>
-          <li>
-            ¿Con qué frecuencia consumis en Burgrill?
-            <input type="radio" name="frecuencia" value="1" />Diariamente
-            <input type="radio" name="frecuencia" value="2" />Varias veces en la
-            semana <input type="radio" name="frecuencia" value="3" />Una vez al
-            mes <input type="radio" name="frecuencia" value="4" />Varias veces
-            al mes
-            <input type="radio" name="frecuencia" value="5" />Ocasionalmente
-            durante el año
-          </li>
+          </p>
+          <p>Muy malo</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionCalidad"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1">1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionCalidad"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2">2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionCalidad"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio3">3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionCalidad"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio4">4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionCalidad"
+              id="inlineRadio4"
+              value="option4"
+            />
+            <label class="form-check-label" for="inlineRadio5">5</label>
+          </div>
+          <p>Excelente</p>
+        </div>
 
-          <li>
-            Dejanos tu opinión o sugerencias para nuevos productos
-            <input type="text" id="suggest" />
-          </li>
-        </ol>
-        <input class="boton" type="submit" value="ENVIAR" />
-        <input class="boton" type="reset" value="RESTABLECER" />
-      </form>
+        <div>
+          <p>¿Con qué frecuencia consumis en Burgrill?</p>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionFrecuencia"
+              id="inlineRadio1"
+              value="option1"
+            />
+            <label class="form-check-label" for="inlineRadio1"
+              >Diariamente</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionFrecuencia"
+              id="inlineRadio2"
+              value="option2"
+            />
+            <label class="form-check-label" for="inlineRadio2"
+              >Varias veces en la semana</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionFrecuencia"
+              id="inlineRadio3"
+              value="option3"
+            />
+            <label class="form-check-label" for="inlineRadio3"
+              >Una vez al mes</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionFrecuencia"
+              id="inlineRadio4"
+              value="option4"
+            />
+            <label class="form-check-label" for="inlineRadio4"
+              >Varias veces al mes</label
+            >
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="opcionFrecuencia"
+              id="inlineRadio5"
+              value="option5"
+            />
+            <label class="form-check-label" for="inlineRadio5"
+              >Ocasionalmente durante el año</label
+            >
+          </div>
+        </div>
+        <div>
+          Dejanos tu opinión o sugerencias para nuevos productos
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+        </div>
+
+        <input class="btn btn-primary boton" type="submit" value="Enviar" />
+        <input class="btn btn-primary boton" type="reset" value="Borrar" />
+      </section>
     </div>
-    <section class="sorteo">
-      <div>
-        <h3>¡Dejanos tus datos y participá por combos de regalo</h3>
-      </div>
-      <div>
+
+    <div class="row">
+      <section class="col-xl-6 col-md-6 col-sm-12 sorteo">
+        <h2>¡Dejanos tus datos y participá por combos de regalo</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
           aspernatur dignissimos vitae! Ad ratione odit sunt quas asperiores
           illum enim amet error! Vel nulla officia eveniet! Dolore, sapiente
           qui. Mollitia!
         </p>
-      </div>
-      <div>
-        <form>
-          <input type="text" placeholder="Nombre" id="nombreS" size="80" />
-          <input type="text" placeholder="Apellido" id="apellidoS" size="80" />
-          <input type="email" placeholder="Mail" id="mailS" size="80" />
-          <div>
-            <button class="boton">Enviar</button>
-          </div>
-        </form>
-      </div>
-    </section>
-    <div class="fotoSorteo">
-      <img src="../img/hamburguesa.jpg" alt="" />
+        <div class="form-group">
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="Email"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            id="nombre"
+            name="name"
+            type="text"
+            placeholder="Nombre"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            id="apellido"
+            name="name"
+            type="text"
+            placeholder="Apellido"
+            class="form-control"
+          />
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit" />
+      </section>
+      <section class="col-xl-6 col-md-6 col-sm-12">
+        <img src="../img/hamburguesa.jpg" class="fotoSorteo" alt="img encuesta">
+      </section>
     </div>
-    <!-- FINAL CONTENIDO PRINCIPAL -->
 
     <!-- INICIO FOOTER -->
     <footer>
@@ -164,5 +397,12 @@
       </div>
     </footer>
     <!-- FINAL FOOTER -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

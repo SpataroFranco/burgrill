@@ -196,6 +196,68 @@ footer {
   margin-bottom: 8px;
 }
 
+/********* Css Encuesta ********/
+.tituloEncuesta{
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.parrafos p{
+  text-align: center;
+}
+
+.boton{
+  margin: 0 10px 10px 20px;
+}
+
+.encuesta{
+  background-color: #432818;
+  border: black solid 3px;
+  color: black;
+  padding: 10px;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: center;
+}
+
+.encuesta p{
+  margin: 0 20px;
+  display: inline;
+}
+
+.encuesta div{
+  margin: 20px 0;
+}
+
+.sorteo{
+  background-color: #432818;
+  text-align: center;
+  padding: 20px;
+  margin: 2%;
+  width: 46%;
+  color: black;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sorteo div{
+  margin: 40px 0;
+}
+
+.fotoSorteo{
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 96%;
+  margin: 2%;
+}
+
+/********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
   /*Query ubicacion*/
   .infoUbi {
@@ -220,5 +282,21 @@ footer {
   .formContacto{
     width: 80%;
     margin: 0 10% 10% 10%;
+  }
+
+  /*Query contacto*/
+  .tituloEncuesta{
+    margin: 5%;
+    text-align: center;
+  }
+  .encuesta{
+    width: 90%;
+  }
+  .sorteo{
+    width: 90%;
+    margin: 5%;
+  }
+  .fotoSorteo{
+    display: none;
   }
 }
