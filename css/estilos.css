@@ -257,6 +257,39 @@ footer {
   margin: 2%;
 }
 
+/********* Css Take Away ********/
+.tituloTakeAway{
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.titulo{
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.burgerCard{
+  margin: 20px;
+}
+
+.card{
+  background-color: transparent;
+  color: white;
+}
+
+.card div div img{
+  border-radius: 12px;
+}
+
+.tituloTipo{
+  color: white;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
   /*Query ubicacion*/

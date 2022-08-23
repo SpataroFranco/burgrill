@@ -11,236 +11,427 @@
       rel="stylesheet"
     />
     <link rel="shortcut icon" href="../img/favicon.jpg" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/estilos.css" />
     <title>Take away</title>
   </head>
 
   <!-- INICIO HEADER -->
-  <body class="bodyTakeAway">
-    <header class="header">
-      <img class="logo" src="../img/locoTrans.png" alt="logoBurGrill" />
-      <nav class="links">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="takeAway.html">Take Away</a></li>
-          <li><a href="ubicacion.html">Ubicacion</a></li>
-          <li><a href="encuesta.html">Encuesta</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-      <div class="social">
-        <img src="../img/cart.svg" alt="imagen carrito" />
-        <img src="../img/instagram.svg" alt="imagen ig" />
-        <img src="../img/Whatsapp.svg" alt="imagen whatsapp" />
-      </div>
-    </header>
-    <!-- FINAL HEADER -->
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light nav-pills">
+      <div class="container-fluid">
+        <span>
+          <img
+            class="navbar-brand logo logoH"
+            src="../img/locoTrans.png"
+            alt="logoBurGrill"
+          />
+        </span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="takeAway.html">Take away</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="encuesta.html">Encuesta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
 
+          <span class="navbar-text">
+            <img src="../img/cart.svg" alt="imagen carrito" />
+            <img src="../img/instagram.svg" alt="imagen ig" />
+            <img src="../img/Whatsapp.svg" alt="imagen whatsapp" />
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- FINAL HEADER -->
     <!-- INICIO CONTENIDO PRINCIPAL -->
-    <div class="tituloPrincipal">
+    <div class="tituloTakeAway">
       <h1>Take Away</h1>
     </div>
-    <div class="videoInicio">
-      <iframe width="420" height="315" src="../img/videoTaway.mp4"> </iframe>
-    </div>
-    <div class="tituloBurger">
+
+    <div class="titulo">
       <h2>Hamburguesas</h2>
     </div>
 
-    <!-- BURGER CLASICAS -->
-    <div class="tituloClasicas">
-      <h3>Las clasicas:</h3>
-    </div>
-    <section class="clasica1">
-      <div class="dataProducto">
-        <h4>clasica1</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
-      </div>
-      <img class="imgProducto" src="../img/burger1.jpg" alt="" />
-    </section>
-
-    <section class="clasica2">
-      <div class="dataProducto">
-        <h4>clasica2</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
-      </div>
-      <img class="imgProducto" src="../img/burger2.jpg" alt="" />
-    </section>
-
-    <section class="clasica3">
-      <div class="dataProducto">
-        <h4>clasica3</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+    <!-- CLASICAS -->
+    <section class="row burgerCard">
+      <h3 class="tituloTipo">clasicas</h3>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger1.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger1"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <img class="imgProducto" src="../img/burger3.jpg" alt="" />
-    </section>
-
-    <section class="clasica4">
-      <div class="dataProducto">
-        <h4>clasica4</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger2.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger2"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/burger4.jpg" alt="" />
-    </section>
 
-    <section class="clasica5">
-      <div class="dataProducto">
-        <h4>clasica5</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger3.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger3"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/burger5.jpg" alt="" />
-    </section>
 
-    <section class="clasica6">
-      <div class="dataProducto">
-        <h4>clasica6</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger4.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger4"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/burger6.jpg" alt="" />
-    </section>
 
-    <!-- BURGER ESPECIALES -->
-    <div class="tituloEspeciales">
-      <h3>Las especiales:</h3>
-    </div>
-
-    <section class="especial1">
-      <div class="dataProducto">
-        <h4>especial1</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger5.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger5"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/burger7.jpg" alt="" />
-    </section>
 
-    <section class="especial2">
-      <div class="dataProducto">
-        <h4>especial2</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger6.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger6"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/burger10.jpg" alt="" />
     </section>
 
-    <section class="especial3">
-      <div class="dataProducto">
-        <h4>especial3</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+    <!-- ESPECIALES -->
+    <section class="row burgerCard">
+      <h3 class="tituloTipo">Especiales</h3>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger7.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger7"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/burger9.jpg" alt="" />
-    </section>
 
-    <!-- VEGGIES -->
-    <section class="veggies">
-      <p>
-        Podes pedir cualquiera de nuestras Hamburguesas con medallon veggie!
-      </p>
-      <p>
-        Ahora podes disfrutar de cualquier burger de nuestro menú con un
-        medallon totalmente vegetal creado con legumbres y verduras
-        seleccionadas
-      </p>
-      <img class="imgProducto" src="../img/burgerVeggie.jpg" alt="" />
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger2.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger8"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger1.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger9"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/burger3.jpg"
+              class="img-fluid rounded-start"
+              alt="img burger10"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- BEBIDAS -->
-    <div class="tituloBebidas">
-      <h3>Bebidas</h3>
-    </div>
-
-    <section class="bebida1">
-      <div class="dataProducto">
-        <h4>bebida1</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+    <section class="row burgerCard">
+      <h3 class="titulo">Bebidas</h3>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/andesRoja.png"
+              class="img-fluid rounded-start"
+              alt="img andesRoja"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/agua.png" alt="" />
-    </section>
 
-    <section class="bebida2">
-      <div class="dataProducto">
-        <h4>bebida2</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/agua.png"
+              class="img-fluid rounded-start"
+              alt="img agua"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/andesRoja.png" alt="" />
-    </section>
 
-    <section class="bebida3">
-      <div class="dataProducto">
-        <h4>bebida3</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
-          eligendi aut inventore architecto rem voluptatibus libero ipsa quae
-          praesentium et aperiam, nisi labore ullam totam impedit, harum
-          maiores, ad necessitatibus.
-        </p>
-        <button class="boton">Agregar</button>
+      <div
+        class="card mb-3 col-xl-4 col-md-4 col-sm-12 c1"
+        style="max-width: 540px"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../img/aquarius.png"
+              class="img-fluid rounded-start"
+              alt="img aquarius"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <a href="#" class="btn btn-primary">Agregar</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <img class="imgProducto" src="../img/aquarius.png" alt="" />
     </section>
     <!-- FINAL CONTENIDO PRINCIPAL -->
 
@@ -259,5 +450,12 @@
       </div>
     </footer>
     <!-- FINAL FOOTER -->
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
