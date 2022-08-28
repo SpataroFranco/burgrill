@@ -157,6 +157,32 @@ footer {
   color: black;
   background-color: #3a1803;
   border-color: black; }
+  .btn-primary:hover {
+    color: black;
+    background-color: #5a3333;
+    border-color: black; }
+  .btn-primary:focus {
+    color: black;
+    background-color: #5a3333;
+    border-color: black; }
+  .btn-primary:active {
+    color: black;
+    background-color: #5a3333;
+    border-color: black; }
+
+.btn-primary.active {
+  color: black;
+  background-color: #5a3333;
+  border-color: black; }
+
+.open > .dropdown-toggle.btn-primary {
+  color: black;
+  background-color: #5a3333;
+  border-color: black; }
+
+button:focus {
+  outline-color: transparent !important;
+  outline-style: none !important; }
 
 .text-center {
   display: flex;
