@@ -1,74 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+* {
+  font-family: 'DM Serif Display', serif; }
 
-*{
-  font-family: 'DM Serif Display', serif;
-}
-
-body{
+body {
   background-image: url("../img/fondoMadera.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-}
+  background-size: cover; }
 
 /********* Css Index ********/
-.logo{
-  width: 6rem;
-}
-.logoH{
-  margin-right: 28rem;
-}
-.container-fluid{
+.logo {
+  width: 6rem; }
+
+.logoH {
+  margin-right: 28rem; }
+
+.container-fluid {
   background-color: #432818;
-  border-bottom: #2b0404 solid 2px;
-}
+  border-bottom: #2b0404 solid 2px; }
 
-.nav-pills{
-  padding: 0;
-}
+.nav-pills {
+  padding: 0; }
+  .nav-pills .nav-link.active {
+    background-color: #3d0e0e; }
 
-.nav-link{
+.nav-link {
   color: black;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
-.nav-pills .nav-link.active{
-  background-color: rgb(61, 14, 14);
-}
-
-.imgCarusel{
+.imgCarusel {
   height: 500px;
-  object-fit: cover;
-}
+  object-fit: cover; }
 
-.fotoHistoria{
+.fotoHistoria {
   width: 98%;
   height: 500px;
   margin: 2%;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
-.historia{
+.historia {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   margin: 48px;
   text-align: center;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
-.historia p{
-  color: white;
-}
+.historia p {
+  color: white; }
 
-.tituloHistoria{
+.tituloHistoria {
   margin-top: 40px;
   text-align: center;
   font-family: 'Oleo Script Swash Caps', cursive;
-  color: white;
-}
+  color: white; }
 
 footer {
   background-color: #432818;
@@ -76,35 +63,31 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: black;
-}
+  color: black; }
 
-.carousel{
+.carousel {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /********* Css Ubicacion ********/
-.tituloUbicacion{
+.tituloUbicacion {
   display: flex;
   color: white;
   justify-content: center;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-.fotoElCazador{
+.fotoElCazador {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   max-width: 100%;
   width: 50%;
   height: auto;
-  display:block;
-  margin: 40px auto;
-}
+  display: block;
+  margin: 40px auto; }
 
-.infoUbi{
+.infoUbi {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -114,126 +97,98 @@ footer {
   justify-content: space-around;
   text-align: center;
   margin: 4%;
-  width: 42%
-}
-
-.infoUbi h2{
-  font-family: 'Oleo Script Swash Caps', cursive;
-  color: white;
-}
-
-.infoUbi div a{
-  color: white;
-}
+  width: 42%; }
+  .infoUbi h2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: white; }
+  .infoUbi div a {
+    color: white; }
 
 /********* Css Contacto ********/
-.tituloContacto{
+.tituloContacto {
+  display: flex;
+  color: white;
+  justify-content: center;
+  margin-top: 20px; }
+
+.parrafos {
   display: flex;
   color: white;
   justify-content: center;
   margin-top: 20px;
-}
+  margin-bottom: 20px; }
+  .parrafos h2 {
+    font-family: 'Oleo Script Swash Caps', cursive; }
+  .parrafos p {
+    text-align: center; }
 
-.parrafos{
-  display: flex;
-  color: white;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.parrafos h2{
-  font-family: 'Oleo Script Swash Caps', cursive;
-}
-
-.imgContacto img{
+.imgContacto img {
   width: 80%;
   margin-left: 10%;
   margin-bottom: 20px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #3a1803;
-}
+  background-color: #3a1803; }
 
-.formContacto{
+.formContacto {
   width: 48%;
   height: 100%;
   margin-bottom: 20px;
-  background-color: #432818;
-}
+  background-color: #432818; }
 
-.form-group p{
+.form-group p {
   color: black;
   margin: 0;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 #estadoCivil {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-.estadoCivil{
-  color: black;
-}
+.estadoCivil {
+  color: black; }
 
-.checkNovedades{
+.checkNovedades {
   margin-top: 20px;
   margin-bottom: 6px;
-  color: black;
-}
+  color: black; }
 
-.btn-primary{
+.btn-primary {
   color: black;
   background-color: #3a1803;
-  border-color: black;
-  
-}
+  border-color: black; }
 
-.text-center{
+.text-center {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 8px;
-}
+  margin-bottom: 8px; }
 
 /********* Css Encuesta ********/
-.tituloEncuesta{
+.tituloEncuesta {
   display: flex;
   color: white;
   justify-content: center;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-.parrafos p{
-  text-align: center;
-}
+.boton {
+  margin: 0 10px 10px 20px; }
 
-.boton{
-  margin: 0 10px 10px 20px;
-}
-
-.encuesta{
+.encuesta {
   background-color: #432818;
   border: black solid 3px;
   color: black;
-  padding: 10px;
-}
+  padding: 10px; }
+  .encuesta p {
+    margin: 0 20px;
+    display: inline; }
+  .encuesta div {
+    margin: 20px 0; }
 
-.contenedor{
+.contenedor {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
-.encuesta p{
-  margin: 0 20px;
-  display: inline;
-}
-
-.encuesta div{
-  margin: 20px 0;
-}
-
-.sorteo{
+.sorteo {
   background-color: #432818;
   text-align: center;
   padding: 20px;
@@ -242,94 +197,68 @@ footer {
   color: black;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-}
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+  .sorteo div {
+    margin: 40px 0; }
 
-.sorteo div{
-  margin: 40px 0;
-}
-
-.fotoSorteo{
+.fotoSorteo {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   width: 96%;
-  margin: 2%;
-}
+  margin: 2%; }
 
 /********* Css Take Away ********/
-.tituloTakeAway{
+.tituloTakeAway {
   display: flex;
   color: white;
   justify-content: center;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-.titulo{
+.titulo {
   display: flex;
   color: white;
   justify-content: center;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
-.burgerCard{
-  margin: 20px;
-}
+.burgerCard {
+  margin: 20px; }
 
-.card{
+.card {
   background-color: transparent;
-  color: white;
-}
+  color: white; }
+  .card div div img {
+    border-radius: 12px; }
 
-.card div div img{
-  border-radius: 12px;
-}
-
-.tituloTipo{
+.tituloTipo {
   color: white;
-  font-family: 'Oleo Script Swash Caps', cursive;
-}
+  font-family: 'Oleo Script Swash Caps', cursive; }
 
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
   /*Query ubicacion*/
   .infoUbi {
-    width: 100%;
-  }
-  .infoUbi div{
-    margin-bottom: 10px;
-  }
-  .fotoElCazador{
-    display: none;
-  }
-
+    width: 100%; }
+    .infoUbi div {
+      margin-bottom: 10px; }
+  .fotoElCazador {
+    display: none; }
   /*Query contacto*/
-  .parrafos{
-    text-align: center;
-  }
-
-  .imgContacto{
-    display: none;
-  }
-
-  .formContacto{
+  .parrafos {
+    text-align: center; }
+  .imgContacto {
+    display: none; }
+  .formContacto {
     width: 80%;
-    margin: 0 10% 10% 10%;
-  }
-
+    margin: 0 10% 10% 10%; }
   /*Query contacto*/
-  .tituloEncuesta{
+  .tituloEncuesta {
     margin: 5%;
-    text-align: center;
-  }
-  .encuesta{
+    text-align: center; }
+  .encuesta {
+    width: 90%; }
+  .sorteo {
     width: 90%;
-  }
-  .sorteo{
-    width: 90%;
-    margin: 5%;
-  }
-  .fotoSorteo{
-    display: none;
-  }
-}
+    margin: 5%; }
+  .fotoSorteo {
+    display: none; } }

@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+*{
+    font-family: 'DM Serif Display', serif;
+  }
+
+body{
+    background-image: url("../img/fondoMadera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/********* Css Index ********/
+.logo{
+    width: 6rem;
+  }
+.logoH{
+    margin-right: 28rem;
+  }
+.container-fluid{
+    background-color: #432818;
+    border-bottom: #2b0404 solid 2px;
+  }
+  
+.nav-pills{
+    padding: 0;
+    .nav-link.active {
+		background-color: rgb(61, 14, 14);
+	}
+  }
+  
+.nav-link{
+    color: black;
+    text-transform: uppercase;
+  }
+
+.imgCarusel{
+    height: 500px;
+    object-fit: cover;
+  }
+
+.fotoHistoria{
+    width: 98%;
+    height: 500px;
+    margin: 2%;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+.historia{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 48px;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+.historia {
+	p {
+		color: white;
+	}
+}
+
+.tituloHistoria{
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: white;
+  }
+
+footer {
+    background-color: #432818;
+    border-top: #2b0404 solid 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+  }
+  
+.carousel{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+
+/********* Css Ubicacion ********/
+.tituloUbicacion{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+.fotoElCazador{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    display:block;
+    margin: 40px auto;
+  }
+  
+.infoUbi{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: #3a1803;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 4%;
+    width: 42%;
+
+    h2 {
+		font-family: 'Oleo Script Swash Caps', cursive;
+		color: white;
+	}
+	div {
+		a {
+			color: white;
+		}
+	}
+  }
+
+/********* Css Contacto ********/
+.tituloContacto{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+.parrafos {
+	display: flex;
+	color: white;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+	h2 {
+		font-family: 'Oleo Script Swash Caps', cursive;
+	}
+
+    p{
+        text-align: center;
+    }
+}
+
+.imgContacto {
+	img {
+		width: 80%;
+		margin-left: 10%;
+		margin-bottom: 20px;
+		box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+		background-color: #3a1803;
+	}
+}
+
+.formContacto{
+    width: 48%;
+    height: 100%;
+    margin-bottom: 20px;
+    background-color: #432818;
+  }
+
+.form-group {
+	p {
+		color: black;
+		margin: 0;
+		margin-top: 20px;
+	}
+}
+
+#estadoCivil {
+    margin-top: 20px;
+  }
+  
+.estadoCivil{
+    color: black;
+  }
+  
+.checkNovedades{
+    margin-top: 20px;
+    margin-bottom: 6px;
+    color: black;
+  }
+  
+.btn-primary{
+    color: black;
+    background-color: #3a1803;
+    border-color: black;
+    
+  }
+  
+.text-center{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+/********* Css Encuesta ********/
+.tituloEncuesta{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+.boton{
+    margin: 0 10px 10px 20px;
+  }
+  
+.encuesta{
+    background-color: #432818;
+    border: black solid 3px;
+    color: black;
+    padding: 10px;
+
+    p{
+        margin: 0 20px;
+        display: inline;
+    }
+
+    div{
+        margin: 20px 0;
+    }
+  }
+  
+.contenedor{
+    display: flex;
+    justify-content: center;
+  }
+
+.sorteo{
+    background-color: #432818;
+    text-align: center;
+    padding: 20px;
+    margin: 2%;
+    width: 46%;
+    color: black;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+    div{
+        margin: 40px 0;
+    }
+  }
+  
+.fotoSorteo{
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 96%;
+    margin: 2%;
+  }
+  
+/********* Css Take Away ********/
+.tituloTakeAway{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+.titulo{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+.burgerCard{
+    margin: 20px;
+  }
+  
+.card{
+    background-color: transparent;
+    color: white;
+
+    div {
+		div {
+			img {
+				border-radius: 12px;
+			}
+		}
+	}
+  }
+
+.tituloTipo{
+    color: white;
+    font-family: 'Oleo Script Swash Caps', cursive;
+  }
+
+/********* QUERIES ********/
+@media (min-width: 320px) and (max-width: 417px) {
+    /*Query ubicacion*/
+	.infoUbi {
+		width: 100%;
+		div {
+			margin-bottom: 10px;
+		}
+	}
+	.fotoElCazador {
+		display: none;
+	}
+    /*Query contacto*/
+    .parrafos{
+    text-align: center;
+    }
+
+    .imgContacto{
+        display: none;
+    }
+
+    .formContacto{
+        width: 80%;
+        margin: 0 10% 10% 10%;
+    }
+
+    /*Query contacto*/
+    .tituloEncuesta{
+        margin: 5%;
+        text-align: center;
+    }
+    .encuesta{
+        width: 90%;
+    }
+    .sorteo{
+        width: 90%;
+        margin: 5%;
+    }
+    .fotoSorteo{
+        display: none;
+    }
+}
