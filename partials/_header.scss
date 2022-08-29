@@ -1,0 +1,22 @@
+.logo{
+    width: 6rem;
+  }
+.logoH{
+    margin-right: 28rem;
+  }
+.container-fluid{
+    background-color: $color-fondo;
+    border-bottom: #2b0404 solid 2px;
+  }
+  
+.nav-pills{
+    padding: 0;
+    .nav-link.active {
+		background-color: rgb(61, 14, 14);
+	}
+  }
+  
+.nav-link{
+    color: black;
+    text-transform: uppercase;
+  }

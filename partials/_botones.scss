@@ -1,0 +1,45 @@
+.btn-primary{
+    color: black;
+    background-color: #3a1803;
+    border-color: black;
+    &:hover {
+      color: black;
+      background-color: rgb(90, 51, 51);
+      border-color: black;
+    }
+    &:focus {
+      color: black;
+      background-color: rgb(90, 51, 51);
+      border-color: black;
+    }
+    &:active {
+      color: black;
+      background-color: rgb(90, 51, 51);
+      border-color: black;
+    }
+  }
+
+.btn-primary.active {
+    color: black;
+    background-color: rgb(90, 51, 51);
+    border-color: black;
+  }
+  
+.open {
+    >.dropdown-toggle.btn-primary {
+      color: black;
+      background-color: rgb(90, 51, 51);
+      border-color: black;
+    }
+  }
+
+button{
+  &:focus{
+    outline-color: transparent !important; 
+    outline-style: none !important;
+  }
+}
+
+.boton{
+    margin: 0 10px 10px 20px;
+  }

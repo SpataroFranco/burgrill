@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import '../partials/header';
+@import '../partials/footer';
+@import '../partials/variables';
+@import '../partials/botones';
+
 
 *{
     font-family: 'DM Serif Display', serif;
@@ -12,29 +17,6 @@ body{
   }
 
 /********* Css Index ********/
-.logo{
-    width: 6rem;
-  }
-.logoH{
-    margin-right: 28rem;
-  }
-.container-fluid{
-    background-color: #432818;
-    border-bottom: #2b0404 solid 2px;
-  }
-  
-.nav-pills{
-    padding: 0;
-    .nav-link.active {
-		background-color: rgb(61, 14, 14);
-	}
-  }
-  
-.nav-link{
-    color: black;
-    text-transform: uppercase;
-  }
-
 .imgCarusel{
     height: 500px;
     object-fit: cover;
@@ -44,9 +26,9 @@ body{
     width: 98%;
     height: 500px;
     margin: 2%;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
   }
 
 .historia{
@@ -65,25 +47,16 @@ body{
 }
 
 .tituloHistoria{
-    margin-top: 40px;
+    margin-top: $margin-top*2;
     text-align: center;
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: $fuente-cursiva;
     color: white;
-  }
-
-footer {
-    background-color: #432818;
-    border-top: #2b0404 solid 2px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: black;
   }
   
 .carousel{
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
   }
 
 /********* Css Ubicacion ********/
@@ -91,13 +64,13 @@ footer {
     display: flex;
     color: white;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: $margin-top;
   }
   
 .fotoElCazador{
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
     max-width: 100%;
     width: 50%;
     height: auto;
@@ -106,9 +79,9 @@ footer {
   }
   
 .infoUbi{
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
     background-color: #3a1803;
     display: flex;
     flex-direction: column;
@@ -118,7 +91,7 @@ footer {
     width: 42%;
 
     h2 {
-		font-family: 'Oleo Script Swash Caps', cursive;
+		font-family: $fuente-cursiva;
 		color: white;
 	}
 	div {
@@ -133,18 +106,18 @@ footer {
     display: flex;
     color: white;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: $margin-top;
   }
 
 .parrafos {
 	display: flex;
 	color: white;
 	justify-content: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: $margin-top;
+	margin-bottom: $margin-bottom;
 
 	h2 {
-		font-family: 'Oleo Script Swash Caps', cursive;
+		font-family: $fuente-cursiva;
 	}
 
     p{
@@ -156,31 +129,30 @@ footer {
 	img {
 		width: 80%;
 		margin-left: 10%;
-		margin-bottom: 20px;
-		box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-		-webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-		-moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-		background-color: #3a1803;
-	}
+		margin-bottom: $margin-bottom;
+		box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
+  }
 }
 
 .formContacto{
     width: 48%;
     height: 100%;
-    margin-bottom: 20px;
-    background-color: #432818;
+    margin-bottom: $margin-bottom;
+    background-color: $color-fondo;
   }
 
 .form-group {
 	p {
 		color: black;
 		margin: 0;
-		margin-top: 20px;
+		margin-top: $margin-top;
 	}
 }
 
 #estadoCivil {
-    margin-top: 20px;
+    margin-top: $margin-top;
   }
   
 .estadoCivil{
@@ -188,56 +160,15 @@ footer {
   }
   
 .checkNovedades{
-    margin-top: 20px;
-    margin-bottom: 6px;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom/2;
     color: black;
   }
   
-.btn-primary{
-    color: black;
-    background-color: #3a1803;
-    border-color: black;
-    &:hover {
-      color: black;
-      background-color: rgb(90, 51, 51);
-      border-color: black;
-    }
-    &:focus {
-      color: black;
-      background-color: rgb(90, 51, 51);
-      border-color: black;
-    }
-    &:active {
-      color: black;
-      background-color: rgb(90, 51, 51);
-      border-color: black;
-    }
-  }
-
-.btn-primary.active {
-    color: black;
-    background-color: rgb(90, 51, 51);
-    border-color: black;
-  }
-  
-.open {
-    >.dropdown-toggle.btn-primary {
-      color: black;
-      background-color: rgb(90, 51, 51);
-      border-color: black;
-    }
-  }
-
-button{
-  &:focus{
-    outline-color: transparent !important; 
-    outline-style: none !important;
-  }
-}
 .text-center{
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 8px;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom/2;
   }
 
 /********* Css Encuesta ********/
@@ -245,15 +176,11 @@ button{
     display: flex;
     color: white;
     justify-content: center;
-    margin-top: 20px;
-  }
-  
-.boton{
-    margin: 0 10px 10px 20px;
+    margin-top: $margin-top;
   }
   
 .encuesta{
-    background-color: #432818;
+    background-color: $color-fondo;
     border: black solid 3px;
     color: black;
     padding: 10px;
@@ -274,15 +201,15 @@ button{
   }
 
 .sorteo{
-    background-color: #432818;
+    background-color: $color-fondo;
     text-align: center;
     padding: 20px;
     margin: 2%;
     width: 46%;
     color: black;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
 
     div{
         margin: 40px 0;
@@ -290,9 +217,9 @@ button{
   }
   
 .fotoSorteo{
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: $box-shadow;
+    -webkit-box-shadow: $webkit-box-shadow;
+    -moz-box-shadow: $moz-box-shadow;
     width: 96%;
     margin: 2%;
   }
@@ -302,14 +229,14 @@ button{
     display: flex;
     color: white;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: $margin-top;
   }
   
 .titulo{
     display: flex;
     color: white;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: $margin-top;
   }
   
 .burgerCard{
@@ -331,7 +258,7 @@ button{
 
 .tituloTipo{
     color: white;
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: $fuente-cursiva;
   }
 
 /********* QUERIES ********/
@@ -340,7 +267,7 @@ button{
 	.infoUbi {
 		width: 100%;
 		div {
-			margin-bottom: 10px;
+			margin-bottom: $margin-bottom/2;
 		}
 	}
 	.fotoElCazador {

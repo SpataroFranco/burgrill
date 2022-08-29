@@ -8,6 +8,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover; }
 
+/*Variables*/
 /********* Css Index ********/
 .logo {
   width: 6rem; }
@@ -54,7 +55,7 @@ body {
 .tituloHistoria {
   margin-top: 40px;
   text-align: center;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: "Oleo Script Swash Caps", cursive;
   color: white; }
 
 footer {
@@ -99,7 +100,7 @@ footer {
   margin: 4%;
   width: 42%; }
   .infoUbi h2 {
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: "Oleo Script Swash Caps", cursive;
     color: white; }
   .infoUbi div a {
     color: white; }
@@ -118,7 +119,7 @@ footer {
   margin-top: 20px;
   margin-bottom: 20px; }
   .parrafos h2 {
-    font-family: 'Oleo Script Swash Caps', cursive; }
+    font-family: "Oleo Script Swash Caps", cursive; }
   .parrafos p {
     text-align: center; }
 
@@ -128,8 +129,7 @@ footer {
   margin-bottom: 20px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #3a1803; }
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 .formContacto {
   width: 48%;
@@ -258,7 +258,7 @@ button:focus {
 
 .tituloTipo {
   color: white;
-  font-family: 'Oleo Script Swash Caps', cursive; }
+  font-family: "Oleo Script Swash Caps", cursive; }
 
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
