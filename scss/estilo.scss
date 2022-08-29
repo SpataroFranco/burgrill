@@ -2,18 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import '../partials/header';
 @import '../partials/footer';
+@import '../partials/body';
 @import '../partials/variables';
 @import '../partials/botones';
 
 
 *{
     font-family: 'DM Serif Display', serif;
-  }
-
-body{
-    background-image: url("../img/fondoMadera.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
 /********* Css Index ********/

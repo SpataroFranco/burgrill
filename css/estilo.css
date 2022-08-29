@@ -1,15 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
-* {
-  font-family: 'DM Serif Display', serif; }
-
-body {
-  background-image: url("../img/fondoMadera.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
-
 /*Variables*/
-/********* Css Index ********/
 .logo {
   width: 6rem; }
 
@@ -29,6 +20,59 @@ body {
   color: black;
   text-transform: uppercase; }
 
+/*Variables*/
+footer {
+  background-color: #432818;
+  border-top: #2b0404 solid 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black; }
+
+body {
+  background-image: url("../img/fondoMadera.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*Variables*/
+.btn-primary {
+  color: black;
+  background-color: #3a1803;
+  border-color: black; }
+  .btn-primary:hover {
+    color: black;
+    background-color: #5a3333;
+    border-color: black; }
+  .btn-primary:focus {
+    color: black;
+    background-color: #5a3333;
+    border-color: black; }
+  .btn-primary:active {
+    color: black;
+    background-color: #5a3333;
+    border-color: black; }
+
+.btn-primary.active {
+  color: black;
+  background-color: #5a3333;
+  border-color: black; }
+
+.open > .dropdown-toggle.btn-primary {
+  color: black;
+  background-color: #5a3333;
+  border-color: black; }
+
+button:focus {
+  outline-color: transparent !important;
+  outline-style: none !important; }
+
+.boton {
+  margin: 0 10px 10px 20px; }
+
+* {
+  font-family: 'DM Serif Display', serif; }
+
+/********* Css Index ********/
 .imgCarusel {
   height: 500px;
   object-fit: cover; }
@@ -57,14 +101,6 @@ body {
   text-align: center;
   font-family: "Oleo Script Swash Caps", cursive;
   color: white; }
-
-footer {
-  background-color: #432818;
-  border-top: #2b0404 solid 2px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: black; }
 
 .carousel {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -150,44 +186,13 @@ footer {
 
 .checkNovedades {
   margin-top: 20px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
   color: black; }
-
-.btn-primary {
-  color: black;
-  background-color: #3a1803;
-  border-color: black; }
-  .btn-primary:hover {
-    color: black;
-    background-color: #5a3333;
-    border-color: black; }
-  .btn-primary:focus {
-    color: black;
-    background-color: #5a3333;
-    border-color: black; }
-  .btn-primary:active {
-    color: black;
-    background-color: #5a3333;
-    border-color: black; }
-
-.btn-primary.active {
-  color: black;
-  background-color: #5a3333;
-  border-color: black; }
-
-.open > .dropdown-toggle.btn-primary {
-  color: black;
-  background-color: #5a3333;
-  border-color: black; }
-
-button:focus {
-  outline-color: transparent !important;
-  outline-style: none !important; }
 
 .text-center {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 8px; }
+  margin-bottom: 10px; }
 
 /********* Css Encuesta ********/
 .tituloEncuesta {
@@ -195,9 +200,6 @@ button:focus {
   color: white;
   justify-content: center;
   margin-top: 20px; }
-
-.boton {
-  margin: 0 10px 10px 20px; }
 
 .encuesta {
   background-color: #432818;
