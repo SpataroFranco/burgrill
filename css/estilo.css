@@ -108,7 +108,7 @@ button:focus {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
 /********* Css Ubicacion ********/
-.tituloUbicacion {
+.tituloUbicacion, .titulo {
   display: flex;
   color: white;
   justify-content: center;
@@ -244,10 +244,7 @@ button:focus {
   margin-top: 20px; }
 
 .titulo {
-  display: flex;
-  color: white;
-  justify-content: center;
-  margin-top: 20px; }
+  font-family: "Oleo Script Swash Caps", cursive; }
 
 .burgerCard {
   margin: 20px; }

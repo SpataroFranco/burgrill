@@ -6,6 +6,12 @@
 @import '../partials/variables';
 @import '../partials/botones';
 
+@mixin estiloTitulos {
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-top: $margin-top;
+}
 
 *{
     font-family: 'DM Serif Display', serif;
@@ -56,10 +62,7 @@
 
 /********* Css Ubicacion ********/
 .tituloUbicacion{
-    display: flex;
-    color: white;
-    justify-content: center;
-    margin-top: $margin-top;
+    @include estiloTitulos;
   }
   
 .fotoElCazador{
@@ -98,17 +101,11 @@
 
 /********* Css Contacto ********/
 .tituloContacto{
-    display: flex;
-    color: white;
-    justify-content: center;
-    margin-top: $margin-top;
+    @include estiloTitulos;
   }
 
 .parrafos {
-	display: flex;
-	color: white;
-	justify-content: center;
-	margin-top: $margin-top;
+	@include estiloTitulos;
 	margin-bottom: $margin-bottom;
 
 	h2 {
@@ -168,10 +165,7 @@
 
 /********* Css Encuesta ********/
 .tituloEncuesta{
-    display: flex;
-    color: white;
-    justify-content: center;
-    margin-top: $margin-top;
+    @include estiloTitulos;
   }
   
 .encuesta{
@@ -221,17 +215,12 @@
   
 /********* Css Take Away ********/
 .tituloTakeAway{
-    display: flex;
-    color: white;
-    justify-content: center;
-    margin-top: $margin-top;
+    @include estiloTitulos;
   }
   
 .titulo{
-    display: flex;
-    color: white;
-    justify-content: center;
-    margin-top: $margin-top;
+    @extend .tituloUbicacion;
+    font-family: $fuente-cursiva;
   }
   
 .burgerCard{
