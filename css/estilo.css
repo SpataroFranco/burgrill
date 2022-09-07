@@ -230,6 +230,9 @@ button:focus {
   .sorteo div {
     margin: 40px 0; }
 
+.row section div {
+  margin-top: 10%; }
+
 .fotoSorteo {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
