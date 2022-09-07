@@ -32,7 +32,8 @@ footer {
 body {
   background-image: url("../img/fondoMadera.jpg");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  overflow-x: hidden; }
 
 /*Variables*/
 .btn-primary {
