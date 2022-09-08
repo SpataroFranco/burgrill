@@ -251,16 +251,32 @@ button:focus {
   font-family: "Oleo Script Swash Caps", cursive; }
 
 .burgerCard {
-  margin: 20px; }
+  margin: 20px;
+  display: flex;
+  justify-content: space-around; }
 
 .card {
   background-color: transparent;
+  margin: 1%;
   color: white; }
   .card div div img {
     border-radius: 12px; }
 
+.col-md-4 .btn-primary {
+  margin-top: 20px; }
+
+.precio {
+  text-transform: bold; }
+
+.card-title {
+  text-transform: bold; }
+
+.card-text {
+  font-style: "Oleo Script Swash Caps", cursive; }
+
 .tituloTipo {
   color: white;
+  margin-left: 8%;
   font-family: "Oleo Script Swash Caps", cursive; }
 
 /********* QUERIES ********/

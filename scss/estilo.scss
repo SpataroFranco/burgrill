@@ -98,6 +98,7 @@
 		}
 	}
   }
+  
 
 /********* Css Contacto ********/
 .tituloContacto{
@@ -205,8 +206,12 @@
     }
   }
 
-.row section div{
-  margin-top: 10%;
+.row{
+  section{
+    div{
+      margin-top: 10%;
+    }
+  }
 }
   
 .fotoSorteo{
@@ -229,29 +234,49 @@
   
 .burgerCard{
     margin: 20px;
+    display: flex;
+    justify-content:space-around;
   }
   
 .card{
-    background-color: transparent;
+    background-color:transparent;
+    margin: 1%;
     color: white;
 
     div {
-		div {
-			img {
-				border-radius: 12px;
+		  div {
+			  img {
+				  border-radius: 12px;
 			}
 		}
 	}
   }
 
+.col-md-4{
+    .btn-primary{
+      margin-top: 20px;
+   }
+}
+.precio{
+  text-transform: bold;
+}
+.card-title{
+  text-transform: bold;
+}
+.card-text{
+  font-style: $fuente-cursiva;
+}
+
 .tituloTipo{
     color: white;
+    margin-left: 8%;
     font-family: $fuente-cursiva;
   }
 
+
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
-    /*Query ubicacion*/
+  /*Query ubicacion*/
 	.infoUbi {
 		width: 100%;
 		div {
@@ -290,4 +315,4 @@
     .fotoSorteo{
         display: none;
     }
-}
+  }
