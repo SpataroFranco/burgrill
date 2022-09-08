@@ -2,13 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import '../partials/header';
 @import '../partials/footer';
-@import '../partials/body';
 @import '../partials/variables';
 @import '../partials/botones';
 
+body{
+  overflow-x: hidden;
+}
+
 @mixin estiloTitulos {
     display: flex;
-    color: white;
+    color: black;
     justify-content: center;
     margin-top: $margin-top;
 }
@@ -24,26 +27,22 @@
   }
 
 .fotoHistoria{
-    width: 98%;
-    height: 500px;
-    margin: 2%;
-    box-shadow: $box-shadow;
-    -webkit-box-shadow: $webkit-box-shadow;
-    -moz-box-shadow: $moz-box-shadow;
+    width: 100%;
+    height: 40rem;
   }
 
 .historia{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     margin: 48px;
     text-align: center;
-    justify-content: space-around;
+    justify-content: center;
   }
 
 .historia {
 	p {
-		color: white;
+		color: black;
+    text-align: justify;
 	}
 }
 
@@ -51,36 +50,25 @@
     margin-top: $margin-top*2;
     text-align: center;
     font-family: $fuente-cursiva;
-    color: white;
-  }
-  
-.carousel{
-    box-shadow: $box-shadow;
-    -webkit-box-shadow: $webkit-box-shadow;
-    -moz-box-shadow: $moz-box-shadow;
+    color: black;
   }
 
-/********* SCss Ubicacion ********/
+/********* Scss Ubicacion ********/
 .tituloUbicacion{
     @include estiloTitulos;
   }
   
 .fotoElCazador{
-    box-shadow: $box-shadow;
-    -webkit-box-shadow: $webkit-box-shadow;
-    -moz-box-shadow: $moz-box-shadow;
     max-width: 100%;
-    width: 50%;
-    height: auto;
-    display:block;
-    margin: 40px auto;
+    width: 100%;
+    height: 100vh;
   }
 
 .infoUbi{
     box-shadow: $box-shadow;
     -webkit-box-shadow: $webkit-box-shadow;
     -moz-box-shadow: $moz-box-shadow;
-    background-color: #3a1803;
+    background-color: $color-fondo;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -177,6 +165,8 @@
     border: black solid 3px;
     color: black;
     padding: 10px;
+    width: 96%;
+    margin: 0 2%;
 
     p{
         margin: 0 20px;
@@ -192,17 +182,12 @@
     display: flex;
     justify-content: center;
   }
-
+  
 .sorteo{
     background-color: $color-fondo;
     text-align: center;
-    padding: 20px;
-    margin: 2%;
-    width: 46%;
+    width: 40%;
     color: black;
-    box-shadow: $box-shadow;
-    -webkit-box-shadow: $webkit-box-shadow;
-    -moz-box-shadow: $moz-box-shadow;
 
     div{
         margin: 40px 0;
@@ -216,16 +201,22 @@
     }
   }
 }
-  
+.cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .fotoSorteo{
-    box-shadow: $box-shadow;
-    -webkit-box-shadow: $webkit-box-shadow;
-    -moz-box-shadow: $moz-box-shadow;
     width: 96%;
-    margin: 2%;
   }
   
 /********* Scss Take Away ********/
+.takeAwayImg{
+  width: 100%;
+  max-height: max-content;
+}
+
 .tituloTakeAway{
     @include estiloTitulos;
   }
@@ -242,15 +233,12 @@
   }
   
 .card{
-    background-color:transparent;
+    border:none;
     margin: 1%;
-    color: white;
-
     div {
 		  div {
 			  img {
-				  border-radius: 16px;
-          margin: 10px;
+				  border-radius: 16px;    
 			}
 		}
 	}
@@ -258,25 +246,35 @@
 
 .col-md-4{
     .btn-primary{
-      margin-top: 20px;
+      margin-top: 10px;
    }
 }
 .precio{
   text-transform: bold;
+  color: black;
 }
 .card-title{
   text-transform: bold;
+  color: black;
 }
 .card-text{
   font-style: $fuente-cursiva;
+  color: black;
 }
 
 .tituloTipo{
-    color: white;
+    color: black;
     margin-left: 8%;
     font-family: $fuente-cursiva;
   }
 
+.container-titulo{
+  background-color: $color-fondo;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {

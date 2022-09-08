@@ -8,50 +8,41 @@
   margin-right: 28rem; }
 
 .container-fluid {
-  background-color: #432818;
+  background-color: #bc6c25;
   border-bottom: #2b0404 solid 2px; }
 
 .nav-pills {
   padding: 0; }
   .nav-pills .nav-link.active {
-    background-color: #3d0e0e; }
+    background-color: #bc6c25; }
 
 .nav-link {
-  color: black;
+  color: white;
   text-transform: uppercase; }
 
 /*Variables*/
 footer {
-  background-color: #432818;
+  background-color: #bc6c25;
   border-top: #2b0404 solid 2px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: black; }
-
-body {
-  background-image: url("../img/fondoMadera.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow-x: hidden; }
+  color: white; }
 
 /*Variables*/
+/*Variables*/
 .btn-primary {
-  color: black;
-  background-color: #3a1803;
-  border-color: black; }
+  color: white;
+  background-color: #bc6c25; }
   .btn-primary:hover {
-    color: black;
-    background-color: #5a3333;
-    border-color: black; }
+    color: white;
+    background-color: #dda15e; }
   .btn-primary:focus {
-    color: black;
-    background-color: #5a3333;
-    border-color: black; }
+    color: white;
+    background-color: #dda15e; }
   .btn-primary:active {
-    color: black;
-    background-color: #5a3333;
-    border-color: black; }
+    color: white;
+    background-color: #dda15e; }
 
 .btn-primary.active {
   color: black;
@@ -70,6 +61,9 @@ button:focus {
 .boton {
   margin: 0 10px 10px 20px; }
 
+body {
+  overflow-x: hidden; }
+
 * {
   font-family: 'DM Serif Display', serif; }
 
@@ -79,57 +73,43 @@ button:focus {
   object-fit: cover; }
 
 .fotoHistoria {
-  width: 98%;
-  height: 500px;
-  margin: 2%;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+  width: 100%;
+  height: 40rem; }
 
 .historia {
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
   margin: 48px;
   text-align: center;
-  justify-content: space-around; }
+  justify-content: center; }
 
 .historia p {
-  color: white; }
+  color: black;
+  text-align: justify; }
 
 .tituloHistoria {
   margin-top: 40px;
   text-align: center;
   font-family: "Oleo Script Swash Caps", cursive;
-  color: white; }
+  color: black; }
 
-.carousel {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
-
-/********* SCss Ubicacion ********/
+/********* Scss Ubicacion ********/
 .tituloUbicacion, .titulo {
   display: flex;
-  color: white;
+  color: black;
   justify-content: center;
   margin-top: 20px; }
 
 .fotoElCazador {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   max-width: 100%;
-  width: 50%;
-  height: auto;
-  display: block;
-  margin: 40px auto; }
+  width: 100%;
+  height: 100vh; }
 
 .infoUbi {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #3a1803;
+  background-color: #bc6c25;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -148,13 +128,13 @@ button:focus {
 /********* Scss Contacto ********/
 .tituloContacto {
   display: flex;
-  color: white;
+  color: black;
   justify-content: center;
   margin-top: 20px; }
 
 .parrafos {
   display: flex;
-  color: white;
+  color: black;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -175,7 +155,7 @@ button:focus {
   width: 48%;
   height: 100%;
   margin-bottom: 20px;
-  background-color: #432818; }
+  background-color: #bc6c25; }
 
 .form-group p {
   color: black;
@@ -201,15 +181,17 @@ button:focus {
 /********* Scss Encuesta ********/
 .tituloEncuesta {
   display: flex;
-  color: white;
+  color: black;
   justify-content: center;
   margin-top: 20px; }
 
 .encuesta {
-  background-color: #432818;
+  background-color: #bc6c25;
   border: black solid 3px;
   color: black;
-  padding: 10px; }
+  padding: 10px;
+  width: 96%;
+  margin: 0 2%; }
   .encuesta p {
     margin: 0 20px;
     display: inline; }
@@ -221,32 +203,32 @@ button:focus {
   justify-content: center; }
 
 .sorteo {
-  background-color: #432818;
+  background-color: #bc6c25;
   text-align: center;
-  padding: 20px;
-  margin: 2%;
-  width: 46%;
-  color: black;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
+  width: 40%;
+  color: black; }
   .sorteo div {
     margin: 40px 0; }
 
 .row section div {
   margin-top: 10%; }
 
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .fotoSorteo {
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  width: 96%;
-  margin: 2%; }
+  width: 96%; }
 
 /********* Scss Take Away ********/
+.takeAwayImg {
+  width: 100%;
+  max-height: max-content; }
+
 .tituloTakeAway {
   display: flex;
-  color: white;
+  color: black;
   justify-content: center;
   margin-top: 20px; }
 
@@ -259,29 +241,37 @@ button:focus {
   justify-content: space-around; }
 
 .card {
-  background-color: transparent;
-  margin: 1%;
-  color: white; }
+  border: none;
+  margin: 1%; }
   .card div div img {
-    border-radius: 16px;
-    margin: 10px; }
+    border-radius: 16px; }
 
 .col-md-4 .btn-primary {
-  margin-top: 20px; }
+  margin-top: 10px; }
 
 .precio {
-  text-transform: bold; }
+  text-transform: bold;
+  color: black; }
 
 .card-title {
-  text-transform: bold; }
+  text-transform: bold;
+  color: black; }
 
 .card-text {
-  font-style: "Oleo Script Swash Caps", cursive; }
+  font-style: "Oleo Script Swash Caps", cursive;
+  color: black; }
 
 .tituloTipo {
-  color: white;
+  color: black;
   margin-left: 8%;
   font-family: "Oleo Script Swash Caps", cursive; }
+
+.container-titulo {
+  background-color: #bc6c25;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
