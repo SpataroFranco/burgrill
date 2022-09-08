@@ -17,7 +17,7 @@
     font-family: 'DM Serif Display', serif;
   }
 
-/********* Css Index ********/
+/********* SCss Index ********/
 .imgCarusel{
     height: 500px;
     object-fit: cover;
@@ -60,7 +60,7 @@
     -moz-box-shadow: $moz-box-shadow;
   }
 
-/********* Css Ubicacion ********/
+/********* SCss Ubicacion ********/
 .tituloUbicacion{
     @include estiloTitulos;
   }
@@ -98,9 +98,12 @@
 		}
 	}
   }
-  
 
-/********* Css Contacto ********/
+.vector{
+  width: 1rem;
+}
+
+/********* Scss Contacto ********/
 .tituloContacto{
     @include estiloTitulos;
   }
@@ -164,7 +167,7 @@
     margin-bottom: $margin-bottom/2;
   }
 
-/********* Css Encuesta ********/
+/********* Scss Encuesta ********/
 .tituloEncuesta{
     @include estiloTitulos;
   }
@@ -222,7 +225,7 @@
     margin: 2%;
   }
   
-/********* Css Take Away ********/
+/********* Scss Take Away ********/
 .tituloTakeAway{
     @include estiloTitulos;
   }
@@ -246,7 +249,8 @@
     div {
 		  div {
 			  img {
-				  border-radius: 12px;
+				  border-radius: 16px;
+          margin: 10px;
 			}
 		}
 	}

@@ -73,7 +73,7 @@ button:focus {
 * {
   font-family: 'DM Serif Display', serif; }
 
-/********* Css Index ********/
+/********* SCss Index ********/
 .imgCarusel {
   height: 500px;
   object-fit: cover; }
@@ -108,7 +108,7 @@ button:focus {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
-/********* Css Ubicacion ********/
+/********* SCss Ubicacion ********/
 .tituloUbicacion, .titulo {
   display: flex;
   color: white;
@@ -142,7 +142,10 @@ button:focus {
   .infoUbi div a {
     color: white; }
 
-/********* Css Contacto ********/
+.vector {
+  width: 1rem; }
+
+/********* Scss Contacto ********/
 .tituloContacto {
   display: flex;
   color: white;
@@ -195,7 +198,7 @@ button:focus {
   margin-top: 20px;
   margin-bottom: 10px; }
 
-/********* Css Encuesta ********/
+/********* Scss Encuesta ********/
 .tituloEncuesta {
   display: flex;
   color: white;
@@ -240,7 +243,7 @@ button:focus {
   width: 96%;
   margin: 2%; }
 
-/********* Css Take Away ********/
+/********* Scss Take Away ********/
 .tituloTakeAway {
   display: flex;
   color: white;
@@ -260,7 +263,8 @@ button:focus {
   margin: 1%;
   color: white; }
   .card div div img {
-    border-radius: 12px; }
+    border-radius: 16px;
+    margin: 10px; }
 
 .col-md-4 .btn-primary {
   margin-top: 20px; }
