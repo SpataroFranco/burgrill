@@ -113,7 +113,7 @@ body {
   text-align: center;
   margin: 4%;
   width: 42%; }
-  .infoUbi h2 {
+  .infoUbi h1 {
     font-family: "Oleo Script Swash Caps", cursive;
     color: white; }
   .infoUbi div a {
@@ -206,6 +206,10 @@ body {
   color: black; }
   .sorteo div {
     margin: 40px 0; }
+  .sorteo h2 {
+    color: white;
+    font-family: "Oleo Script Swash Caps", cursive;
+    margin: 8px; }
 
 .row section div {
   margin-top: 10%; }
