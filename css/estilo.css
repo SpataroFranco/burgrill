@@ -234,7 +234,8 @@ body {
   margin-top: 20px; }
 
 .titulo {
-  font-family: "Oleo Script Swash Caps", cursive; }
+  font-family: "Oleo Script Swash Caps", cursive;
+  color: white; }
 
 .burgerCard {
   margin: 20px;

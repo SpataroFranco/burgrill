@@ -230,6 +230,7 @@ body{
 .titulo{
     @extend .tituloUbicacion;
     font-family: $fuente-cursiva;
+    color: white;
   }
   
 .burgerCard{
