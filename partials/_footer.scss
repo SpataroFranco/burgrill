@@ -1,10 +1,10 @@
 @import './variables';
 
-$mapFooter:(color:white, align:center, justificado:space-around);
+$mapFooter:(color:$black, align:center, justificado:space-around);
 
 footer {
-    background-color: $color-fondo;
-    border-top: #2b0404 solid 2px;
+    background-color: $color;
+    border-top: #2b0404 solid 1px;
     display: flex;
     align-items: map-get($mapFooter, align);
     justify-content: map-get($mapFooter , justificado);

@@ -1,326 +1,484 @@
-@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-@import '../partials/header';
-@import '../partials/footer';
-@import '../partials/variables';
-@import '../partials/botones';
-
-body{
-  overflow-x: hidden;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
+@import "../partials/header";
+@import "../partials/footer";
+@import "../partials/variables";
+@import "../partials/botones";
 
 @mixin estiloTitulos {
-    display: flex;
-    color: black;
-    justify-content: center;
-    margin-top: $margin-top;
+  display: flex;
+  color: black;
+  justify-content: center;
+  margin-top: $margin-top;
 }
 
-*{
-    font-family: 'DM Serif Display', serif;
-  }
+* {
+  font-family: "Nunito", sans-serif;
+}
+body {
+  background-color: $white;
+  overflow-x: hidden;
+}
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  row-gap: 64px;
+}
+/********* Scss Index ********/
+.imgCarusel {
+  height: 86vh;
+  object-fit: cover;
+}
 
-/********* SCss Index ********/
-.imgCarusel{
-    height: 65vh;
-    object-fit: cover;
-  }
-
-.fotoHistoria{
-    width:100%;
-    height: 40rem;
-  }
-
-.historia{
-    display: flex;
-    flex-direction: column;
-    margin: 48px;
+.fotoHistoria {
+  width: 100%;
+  height: 40rem;
+  border-radius: 24px;
+}
+.primary-button {
+  background: $black;
+  border: none;
+  width: fit-content;
+  padding: 0 24px;
+  height: 48px;
+  border-radius: 12px;
+  color: $white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.about {
+  display: grid;
+  width: 100%;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+  row-gap: 48px;
+  padding: 0 64px;
+  h2 {
     text-align: center;
-    justify-content: center;
+    font-size: 28px;
   }
-
+  .list {
+    display: flex;
+    gap: 124px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    .item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 24px;
+      align-items: center;
+      .image {
+        width: 150px;
+        background: rgba(237, 237, 237, 1);
+        border-radius: 100%;
+        height: 150px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      span {
+        color: $black;
+        font-size: 16px;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.root-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 124px;
+}
+.hero {
+  width: 100%;
+  display: flex;
+  height: 500px;
+  padding: 0 24px;
+  .content {
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 24px;
+    display: flex;
+    width: 100%;
+    .information {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      h1 {
+        font-size: 64px;
+        max-width: 680px;
+        margin: 0;
+        color: $black;
+        strong {
+          color: $color;
+        }
+      }
+      p {
+        font-size: 16px;
+        color: $black;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+        text-transform: none;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+    .image {
+      width: 460px;
+      height: 460px;
+      img {
+        height: 100%;
+        width: 100%;
+        aspect-ratio: 16/9;
+        object-fit: contain;
+      }
+    }
+  }
+}
+h1 {
+  margin-top: $margin-top * 2;
+  color: black;
+  font-size: 36px;
+}
 .historia {
-	p {
-		color: black;
-    text-align: justify;
-	}
-}
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-right: 140px;
 
-.tituloHistoria{
-    margin-top: $margin-top*2;
-    text-align: center;
-    font-family: $fuente-cursiva;
+  p {
     color: black;
+    text-align: justify;
+    font-size: 16px;
   }
+}
+.row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 124px;
+}
 
 /********* Scss Ubicacion ********/
-.tituloUbicacion{
-    @include estiloTitulos;
-  }
-  
-.fotoElCazador{
-    max-width: 100%;
-    width: 100%;
-    height: 100vh;
-  }
+.tituloUbicacion {
+  @include estiloTitulos;
+}
 
-.infoUbi{
-    box-shadow: $box-shadow;
-    -webkit-box-shadow: $webkit-box-shadow;
-    -moz-box-shadow: $moz-box-shadow;
-    background-color: $color-fondo;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    margin: 4%;
-    width: 42%;
+.fotoElCazador {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+}
 
-    h1{
-		font-family: $fuente-cursiva;
-		color: white;
-	}
-	div {
-		a {
-			color: white;
-		}
-	}
+.infoUbi {
+  box-shadow: $box-shadow;
+  -webkit-box-shadow: $webkit-box-shadow;
+  -moz-box-shadow: $moz-box-shadow;
+  background-color: $color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  margin: 4%;
+  width: 42%;
+
+  h1 {
+    font-family: $fuente-cursiva;
+    color: white;
   }
+  div {
+    a {
+      color: white;
+    }
+  }
+}
 
-.vector{
+.vector {
   width: 1rem;
 }
 
 /********* Scss Contacto ********/
-.tituloContacto{
-    @include estiloTitulos;
-  }
+.tituloContacto {
+  @include estiloTitulos;
+}
 
 .parrafos {
-	@include estiloTitulos;
-	margin-bottom: $margin-bottom;
+  @include estiloTitulos;
+  margin-bottom: $margin-bottom;
 
-	h2 {
-		font-family: $fuente-cursiva;
-	}
+  h2 {
+    font-family: $fuente-cursiva;
+  }
 
-    p{
-        text-align: center;
-    }
+  p {
+    text-align: center;
+  }
 }
 
 .imgContacto {
-	img {
-		width: 80%;
-		margin-left: 10%;
-		margin-bottom: $margin-bottom;
-		box-shadow: $box-shadow;
+  img {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: $margin-bottom;
+    box-shadow: $box-shadow;
     -webkit-box-shadow: $webkit-box-shadow;
     -moz-box-shadow: $moz-box-shadow;
+    border-radius: 8px;
   }
 }
 
-.formContacto{
-    width: 48%;
-    height: 100%;
-    margin-bottom: $margin-bottom;
-    background-color: $color-fondo;
-  }
+.formContacto {
+  padding: 1%;
+  width: 48%;
+  margin-bottom: $margin-bottom;
+  background-color: $color;
+  border-radius: 8px;
+}
 
 .form-group {
-	p {
-		color: black;
-		margin: 0;
-		margin-top: $margin-top;
-	}
+  p {
+    color: black;
+    margin: 0;
+    margin-top: $margin-top;
+  }
 }
 
-#estadoCivil {
-    margin-top: $margin-top;
-  }
-  
-.estadoCivil{
-    color: black;
-  }
-  
-.checkNovedades{
-    margin-top: $margin-top;
-    margin-bottom: $margin-bottom/2;
-    color: black;
-  }
-  
-.text-center{
-    display: flex;
-    margin-top: $margin-top;
-    margin-bottom: $margin-bottom/2;
-  }
+.estadoCivil {
+  margin-top: $margin-top;
+  color: black;
+}
+
+.checkNovedades {
+  margin-top: $margin-top;
+  margin-bottom: $margin-bottom/2;
+  color: black;
+}
 
 /********* Scss Encuesta ********/
-.tituloEncuesta{
-    @include estiloTitulos;
-  }
-  
-.encuesta{
-    background-color: $color-fondo;
-    border: black solid 3px;
-    color: black;
-    padding: 10px;
-    width: 96%;
-    margin: 0 2%;
+.tituloEncuesta {
+  @include estiloTitulos;
+}
 
-    p{
-        margin: 0 20px;
-        display: inline;
-    }
+.encuesta {
+  background-color: $color;
+  padding: 12px;
+  width: 96%;
+  margin: 0 2%;
+  border-radius: 8px;
 
-    div{
-        margin: 20px 0;
-    }
-  }
-  
-.contenedor{
-    display: flex;
-    justify-content: center;
-  }
-  
-.sorteo{
-    background-color: $color-fondo;
-    text-align: center;
-    width: 40%;
-    color: black;
-
-    div{
-        margin: 40px 0;
-    }
-
-    h2{
-      color: white;
-      font-family: $fuente-cursiva;
-      margin: 8px;
-    }
+  p {
+    margin: 0 20px;
+    display: inline;
   }
 
-.row{
-  section{
-    div{
+  div {
+    margin: 20px 0;
+  }
+}
+
+.sorteo {
+  background-color: $color;
+  text-align: center;
+  width: 40%;
+  padding: 2%;
+  color: black;
+  border-radius: 8px;
+
+  h2 {
+    color: white;
+    font-family: $fuente-cursiva;
+    margin: 8px;
+  }
+}
+
+.row {
+  section {
+    div {
       margin-top: 10%;
     }
   }
 }
-.cont{
+.cont {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.fotoSorteo{
-    width: 96%;
+.fotoSorteo {
+  width: 96%;
+}
+
+.boton-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  input {
+    margin-right: 12px;
   }
-  
+}
+
 /********* Scss Take Away ********/
-.takeAwayImg{
+.articulo {
+  margin-bottom: 60px;
+}
+.producto {
+  display: flex;
+}
+.producto-titulo {
+  font-weight: bold;
+  font-size: medium;
+}
+.producto-text {
+  font-size: small;
+}
+.precio {
+  font-weight: bold;
+  margin: 0;
+}
+.imgProducto {
+  img {
+    width: 8rem;
+    border-radius: 16px;
+  }
+}
+.dataProducto {
+  width: 10rem;
+  height: 8.5rem;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.boton {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  margin-top: 8px;
+  border-radius: 24px;
+}
+.contenedor-productos {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.takeAwayImg {
   width: 100%;
   max-height: max-content;
 }
 
-.tituloTakeAway{
-    @include estiloTitulos;
-  }
-  
-.titulo{
-    @extend .tituloUbicacion;
-    font-family: $fuente-cursiva;
-    color: white;
-  }
-  
-.burgerCard{
-    margin: 20px;
-    display: flex;
-    justify-content:space-around;
-  }
-  
-.card{
-    border:none;
-    margin: 1%;
-    div {
-		  div {
-			  img {
-				  border-radius: 16px;    
-			}
-		}
-	}
-  }
-
-.col-md-4{
-    .btn-primary{
-      margin-top: 10px;
-   }
-}
-.precio{
-  text-transform: bold;
-  color: black;
-}
-.card-title{
-  text-transform: bold;
-  color: black;
-}
-.card-text{
-  font-style: $fuente-cursiva;
-  color: black;
+.tituloTakeAway {
+  @include estiloTitulos;
 }
 
-.tituloTipo{
-    color: black;
-    margin-left: 8%;
-    font-family: $fuente-cursiva;
-  }
+.titulo {
+  @extend .tituloUbicacion;
+  color: white;
+}
 
-.container-titulo{
-  background-color: $color-fondo;
+.tituloTipo {
+  color: black;
+  margin-bottom: 8px;
+}
+
+.container-titulo {
+  background-color: $color;
   height: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 6rem;
 }
 
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
-  /*Query ubicacion*/
-	.infoUbi {
-		width: 90%;
-    margin: 4%;
-		div {
-			margin-bottom: $margin-bottom/2;
-		}
-	}
-
-    /*Query contacto*/
-    .parrafos{
+  /*Query footer*/
+  footer {
+    .social {
+      display: none;
+    }
+    .logo {
+      display: none;
+    }
     text-align: center;
-    }
-
-    .imgContacto{
-        display: none;
-    }
-
-    .formContacto{
-        width: 80%;
-        margin: 0 10% 10% 10%;
-    }
-
-    /*Query encuesta*/
-    .tituloEncuesta{
-        margin: 5%;
-        text-align: center;
-    }
-    .encuesta{
-        width: 90%;
-    }
-    .sorteo{
-        width: 90%;
-        margin: 5%;
-    }
-    .fotoSorteo{
-        display: none;
+  }
+  /*Query ubicacion*/
+  .infoUbi {
+    width: 90%;
+    margin: 4%;
+    div {
+      margin-bottom: $margin-bottom/2;
     }
   }
+
+  /*Query contacto*/
+  .parrafos {
+    text-align: center;
+  }
+
+  .imgContacto {
+    display: none;
+  }
+
+  .formContacto {
+    width: 80%;
+    margin: 0 10% 10% 10%;
+  }
+
+  /*Query encuesta*/
+  .tituloEncuesta {
+    margin: 5%;
+    text-align: center;
+  }
+
+  .sorteo {
+    width: 90%;
+    margin: 5%;
+  }
+
+  .fotoSorteo {
+    display: none;
+  }
+
+  /*Query home*/
+  .about {
+    .list {
+      gap: 64px;
+    }
+  }
+  .hero {
+    height: 460px;
+    .content {
+      .information {
+        h1 {
+          font-size: 48px;
+        }
+      }
+      .image {
+        display: none;
+      }
+    }
+  }
+  .container {
+    padding-bottom: 24px;
+    .row {
+      .content {
+        .historia {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .root-content {
+    row-gap: 64px;
+  }
+}
