@@ -26,253 +26,256 @@
 </head>
 
 <!-- INICIO HEADER -->
-
 <body>
-  <nav class="navbar navbar-expand-lg bg-light nav-pills">
-    <div class="container-fluid">
-      <span>
-        <a href="../index.html">
-          <img class="navbar-brand logo logoH" src="../img/locoTrans.png" alt="logoBurGrill" />
-        </a>
-      </span>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="takeAway.html">Take away</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ubicacion.html">Ubicacion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="encuesta.html">Encuesta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+  <header>
+      <nav class="navbar navbar-expand-lg bg-light nav-pills">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="takeAway.html">Take away</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="encuesta.html">Encuesta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
 
-        <span class="navbar-text">
-          <a href="#" target="_blank">
-            <img src="../img/cart.svg" alt="imagen carrito" />
-          </a>
-          <a href="https://www.instagram.com/burgrill.coast/" target="_blank">
-            <img src="../img/instagram.svg" alt="imagen ig" />
-          </a>
-          <a href="https://wa.me/+5491136745145" target="_blank">
-            <img src="../img/Whatsapp.svg" alt="imagen whatsapp" />
-          </a>
-        </span>
-      </div>
-    </div>
-  </nav>
+            <span class="navbar-text">
+              <a href="#" target="_blank">
+                <img src="../img/cart.svg" alt="imagen carrito" />
+              </a>
+              <a
+                href="https://www.instagram.com/burgrill.coast/"
+                target="_blank"
+              >
+                <img src="../img/instagram.svg" alt="imagen instagram" />
+              </a>
+              <a href="https://wa.me/+5491136745145" target="_blank">
+                <img src="../img/Whatsapp.svg" alt="imagen whatsapp" />
+              </a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
   <!-- FINAL HEADER -->
 
   <!-- INICIO CONTENIDO PRINCIPAL -->
-  <div>
-    <img class="takeAwayImg" src="../img/fotoTakeAway.jpg" alt="img take away" />
-  </div>
   <div class="container-titulo">
     <h1 class="titulo">Hamburguesas</h1>
   </div>
   <!-- CLASICAS -->
-  <section class="row burgerCard">
-    <h3 class="tituloTipo">clasicas</h3>
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger1.jpg" class="img-fluid rounded-start" alt="img burger1" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">CheeseBurger</h4>
-            <p class="card-text">
+  <section class="container">
+    <div class="row">
+      <div>
+        <h3 class="tituloTipo">Clasicas</h3>
+      </div>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger1.jpeg" class="img-fluid rounded-start" alt="img burger1" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
               Medallón de carne, cheddar y mayo especial
             </p>
             <p class="precio">600$</p>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
 
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger2.jpg" class="img-fluid rounded-start" alt="img burger2" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Stackgrill</h4>
-            <p class="card-text">
-              Medallón de carne, cheddar, bacon y salsa stack
-            </p>
-            <p class="precio">700$</p>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger2.jpeg" class="img-fluid rounded-start" alt="img burger2" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger3.jpg" class="img-fluid rounded-start" alt="img burger3" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">American</h4>
-            <p class="card-text">
-              Medallón de carne, cheddar, lechuga, cebolla, tomate, pepinillos
-              y salsa secreta
-            </p>
-            <p class="precio">750$</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger4.jpg" class="img-fluid rounded-start" alt="img burger4" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Big B</h4>
-            <p class="card-text">
-              Medallón de carne, cheddar, lechuga repollada, pepinillos,
-              cebolla morada y salsa big
-            </p>
-            <p class="precio">750$</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger5.jpg" class="img-fluid rounded-start" alt="img burger5" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Royale</h4>
-            <p class="card-text">
-              Medallón de carne, cheddar, pepinillos caseros, salsa 1/4 de
-              libra y cebollita
-            </p>
-            <p class="precio">750$</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger6.jpg" class="img-fluid rounded-start" alt="img burger6" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Yankee</h4>
-            <p class="card-text">
-              Medallón de carne, cheddar, bacon, huevo frito y salsa dijonesa
-            </p>
-            <p class="precio">750$</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ESPECIALES -->
-  <section class="row burgerCard">
-    <h3 class="tituloTipo">Especiales</h3>
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger7.jpg" class="img-fluid rounded-start" alt="img burger7" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Caramel</h4>
-            <p class="card-text">
-              Medallón de carne, cheddar, cebolla caramelizada y salsa
-              barbacoa
-            </p>
-            <p class="precio">850$</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger2.jpg" class="img-fluid rounded-start" alt="img burger8" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Red pepper</h4>
-            <p class="card-text">
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
               Medallón de carne, provoleta crocante, morrones confitados
               caseros y salsa picante (suave)
             </p>
-            <p class="precio">900$</p>
+            <p class="precio">600$</p>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
 
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger1.jpg" class="img-fluid rounded-start" alt="img burger9" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Cochina</h4>
-            <p class="card-text">
-              Medallón de carne, doble cheddar, doble bacon, cebolla
-              caramelizada y salsa especial
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger3.jpeg" class="img-fluid rounded-start" alt="img burger3" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
+              Medallón de carne, cheddar y mayo especial
             </p>
-            <p class="precio">900$</p>
+            <p class="precio">600$</p>
           </div>
         </div>
-      </div>
-    </div>
+      </article>
 
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/burger3.jpg" class="img-fluid rounded-start" alt="img burger10" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Championa</h4>
-            <p class="card-text">
-              Medallón de carne, triple cheddar, salsa de queso azul y
-              campiñones salteados con cebolla
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger4.jpeg" class="img-fluid rounded-start" alt="img burger4" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
+              Medallón de carne, cheddar y mayo especial
             </p>
-            <p class="precio">900$</p>
+            <p class="precio">600$</p>
           </div>
         </div>
+      </article>
+
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger5.jpeg" class="img-fluid rounded-start" alt="img burger5" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
+              Medallón de carne, cheddar y mayo especial
+            </p>
+            <p class="precio">600$</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger6.jpeg" class="img-fluid rounded-start" alt="img burger6" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
+              Medallón de carne, cheddar y mayo especial
+            </p>
+            <p class="precio">600$</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- ESPECIALES -->
+      <div>
+        <h3 class="tituloTipo">Especiales</h3>
       </div>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger7.jpg" class="img-fluid rounded-start" alt="img burger7" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
+              Medallón de carne, cheddar y mayo especial
+            </p>
+            <p class="precio">600$</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger8.jpg" class="img-fluid rounded-start" alt="img burger8" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
+              Medallón de carne, cheddar y mayo especial
+            </p>
+            <p class="precio">600$</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger9.jpg" class="img-fluid rounded-start" alt="img burger9" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
+              Medallón de carne, cheddar y mayo especial
+            </p>
+            <p class="precio">600$</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/burger10.jpeg" class="img-fluid rounded-start" alt="img burger10" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">CheeseBurger + Papas Fritas</h4>
+            <p class="producto-text">
+              Medallón de carne, cheddar y mayo especial
+            </p>
+            <p class="precio">600$</p>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -280,55 +283,203 @@
   <div class="container-titulo">
     <h2 class="titulo">Bebidas</h2>
   </div>
-  <section class="row burgerCard">
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/andesRoja.png" class="img-fluid rounded-start" alt="img andesRoja" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Andes roja</h4>
-            <p class="card-text">Cerveza andes de 475ml</p>
+  <section class="container">
+    <div class="row">
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/pepsi.png" class="img-fluid rounded-start" alt="img pepsi" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Pepsi regular 354ml</h4>
+            <p class="producto-text">
+              Lata de pepsi de 354ml
+            </p>
             <p class="precio">300$</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/agua.png" class="img-fluid rounded-start" alt="img agua" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Agua BonAqua</h4>
-            <p class="card-text">Agua sin gas BonAqua de 500ml</p>
-            <p class="precio">200$</p>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/pepsiBlack.png" class="img-fluid rounded-start" alt="img pepsi black" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Pepsi Black 354ml</h4>
+            <p class="producto-text">
+              Lata de pepsi black de 354ml
+            </p>
+            <p class="precio">350$</p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="card mb-2 col-xl-3 col-md-3 col-sm-11 c1" style="max-width: 540px">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="../img/aquarius.png" class="img-fluid rounded-start" alt="img aquarius" />
-          <a href="#" class="btn btn-primary">Agregar</a>
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h4 class="card-title">Aquarius pera</h4>
-            <p class="card-text">Aquarius sin gas de pera de 500ml</p>
-            <p class="precio">250$</p>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/7up.png" class="img-fluid rounded-start" alt="img 7up" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Seven up Regular 354ml</h4>
+            <p class="producto-text">
+              Lata de seven up de 354ml
+            </p>
+            <p class="precio">300$</p>
           </div>
         </div>
-      </div>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/7upSA.png" class="img-fluid rounded-start" alt="img 7up sin azucar" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Seven up Regular 354ml</h4>
+            <p class="producto-text">
+              Lata de seven up sin azucar de 354ml
+            </p>
+            <p class="precio">350$</p>
+          </div>
+        </div>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/patagonia247.png" class="img-fluid rounded-start" alt="img patagonia 24.7" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Cerveza Patagonia 24.7 410ml</h4>
+            <p class="producto-text">
+              Cerveza Patagonia 24.7 410ml
+            </p>
+            <p class="precio">350$</p>
+          </div>
+        </div>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/patagoniaAmber.png" class="img-fluid rounded-start" alt="img patagonia Amber Lager" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Cerveza Patagonia Amber Lager 410ml</h4>
+            <p class="producto-text">
+              Cerveza Patagonia Amber Lager 410ml
+            </p>
+            <p class="precio">350$</p>
+          </div>
+        </div>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/patagoniaBohemian.png" class="img-fluid rounded-start" alt="img patagonia Bohemian" />
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Cerveza Patagonia Bohemian 410ml</h4>
+            <p class="producto-text">
+              Cerveza Patagonia Bohemian 410ml
+            </p>
+            <p class="precio">350$</p>
+          </div>
+        </div>
+      </article>
     </div>
   </section>
+  <div class="container-titulo">
+    <h2 class="titulo">Salsas</h2>
+  </div>
+  <section class="container">
+    <div class="row">
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/AliOli.jpeg" class="img-fluid rounded-start" alt="img aliOli"/>
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Ali Oli</h4>
+            <p class="producto-text">
+              Dip salsa de ali oli
+            </p>
+            <p class="precio">160$</p>
+          </div>
+        </div>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/bbq.jpeg" class="img-fluid rounded-start" alt="img barbacoa"/>
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">BBQ</h4>
+            <p class="producto-text">
+              Dip salsa de barbacoa
+            </p>
+            <p class="precio">160$</p>
+          </div>
+        </div>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/marinara.jpeg" class="img-fluid rounded-start" alt="img marinara"/>
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Marinara</h4>
+            <p class="producto-text">
+              Dip salsa de marinara
+            </p>
+            <p class="precio">160$</p>
+          </div>
+        </div>
+      </article>
+      <article class="articulo col-sm-12 col-md-6 col-lg-4">
+        <div class="producto">
+          <div class="imgProducto">
+            <img src="../img/productos/Relish.jpeg" class="img-fluid rounded-start" alt="img Relish"/>
+            <div class="boton">
+              <button type="submit" class="btn-primary">Agregar</button>
+            </div>
+          </div>
+          <div class="dataProducto">
+            <h4 class="producto-titulo">Relish</h4>
+            <p class="producto-text">
+              Dip salsa de relish
+            </p>
+            <p class="precio">160$</p>
+          </div>
+        </div>
+      </article>
+    </section>
   <!-- FINAL CONTENIDO PRINCIPAL -->
 
   <!-- INICIO FOOTER -->

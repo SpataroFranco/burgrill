@@ -39,11 +39,12 @@
 /*Variables*/
 footer {
   background-color: #ec7913;
-  border-top: #2b0404 solid 1px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: #2f2f2f; }
+  footer .social a {
+    padding: 0 6px; }
 
 /*Variables*/
 /*Variables*/
@@ -70,8 +71,7 @@ footer {
   font-family: "Nunito", sans-serif; }
 
 body {
-  background-color: #f7f7f7;
-  overflow-x: hidden; }
+  background-color: #f7f7f7; }
 
 .root {
   display: flex;
@@ -207,31 +207,30 @@ h1 {
 /********* Scss Ubicacion ********/
 .tituloUbicacion, .titulo {
   display: flex;
-  color: black;
+  color: #2f2f2f;
   justify-content: center;
   margin-top: 20px; }
-
-.fotoElCazador {
-  max-width: 100%;
-  width: 100%;
-  height: 100vh; }
 
 .infoUbi {
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  background-color: #ec7913;
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
   margin: 4%;
-  width: 42%; }
+  width: 42%;
+  height: 100vh; }
   .infoUbi h1 {
-    font-family: "Oleo Script Swash Caps", cursive;
-    color: white; }
+    color: #2f2f2f; }
   .infoUbi div a {
-    color: white; }
+    color: #2f2f2f;
+    font-size: larger;
+    text-decoration: none; }
+  .infoUbi div a:hover {
+    border-bottom: #2f2f2f solid 1px; }
 
 .vector {
   width: 1rem; }
@@ -239,18 +238,16 @@ h1 {
 /********* Scss Contacto ********/
 .tituloContacto {
   display: flex;
-  color: black;
+  color: #2f2f2f;
   justify-content: center;
   margin-top: 20px; }
 
 .parrafos {
   display: flex;
-  color: black;
+  color: #2f2f2f;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 20px; }
-  .parrafos h2 {
-    font-family: "Oleo Script Swash Caps", cursive; }
+  margin-bottom: 40px; }
   .parrafos p {
     text-align: center; }
 
@@ -263,31 +260,77 @@ h1 {
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 8px; }
 
-.formContacto {
-  padding: 1%;
-  width: 48%;
-  margin-bottom: 20px;
-  background-color: #ec7913;
-  border-radius: 8px; }
+.containCheck {
+  display: flex;
+  align-items: center;
+  font-size: 0.875em;
+  width: 100%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #2f2f2f;
+  border: solid 1px #ec7913; }
+  .containCheck .checkNovedades {
+    width: 24px;
+    margin-left: 8px;
+    border-radius: 40px; }
 
-.form-group p {
-  color: black;
-  margin: 0;
-  margin-top: 20px; }
+input {
+  font-size: 0.875em;
+  width: 100%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #2f2f2f;
+  border: solid 1px #ec7913;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; }
 
-.estadoCivil {
-  margin-top: 20px;
-  color: black; }
+input:hover {
+  background: #dda15e;
+  color: #e2dedb; }
 
-.checkNovedades {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: black; }
+textarea {
+  font-size: 0.875em;
+  width: 100%;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+  background: transparent;
+  outline: none;
+  color: #2f2f2f;
+  border: solid 1px #ec7913;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out; }
+
+textarea:hover {
+  background: #dda15e;
+  color: #e2dedb; }
+
+.submit {
+  width: 100%;
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  font-size: 0.875em;
+  color: #2f2f2f;
+  outline: none;
+  cursor: pointer;
+  border: solid 1px #ec7913;
+  border-top: none; }
+
+.submit:hover {
+  color: #e2dedb; }
 
 /********* Scss Encuesta ********/
 .tituloEncuesta {
   display: flex;
-  color: black;
+  color: #2f2f2f;
   justify-content: center;
   margin-top: 20px; }
 
@@ -334,6 +377,9 @@ h1 {
     margin-right: 12px; }
 
 /********* Scss Take Away ********/
+.row {
+  padding-bottom: 64px; }
+
 .articulo {
   margin-bottom: 60px; }
 
@@ -376,20 +422,20 @@ h1 {
   padding: 0; }
 
 .takeAwayImg {
-  width: 100%;
+  width: 10%;
   max-height: max-content; }
 
 .tituloTakeAway {
   display: flex;
-  color: black;
+  color: #2f2f2f;
   justify-content: center;
   margin-top: 20px; }
 
 .titulo {
-  color: white; }
+  color: #f7f7f7; }
 
 .tituloTipo {
-  color: black;
+  color: #2f2f2f;
   margin-bottom: 8px; }
 
 .container-titulo {
@@ -399,6 +445,10 @@ h1 {
   align-items: center;
   justify-content: center;
   margin-bottom: 6rem; }
+
+.card {
+  background-color: #f7f7f7;
+  border: transparent; }
 
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
@@ -417,6 +467,8 @@ h1 {
       margin-bottom: 10px; }
   /*Query contacto*/
   .parrafos {
+    text-align: center; }
+  .tituloContacto {
     text-align: center; }
   .imgContacto {
     display: none; }

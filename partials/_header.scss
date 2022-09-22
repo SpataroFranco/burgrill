@@ -1,22 +1,28 @@
 @import "./variables";
+
 .logo {
   width: 6rem;
 }
+
 .container-fluid {
   background-color: $white;
   padding: 0;
   height: 64px;
 }
+
 .navbar-collapse {
   background: $white;
   width: 100%;
   z-index: 99;
+
   ul {
     padding: 0 24px;
   }
 }
+
 .nav-pills {
   padding: 0;
+
   .nav-link.active {
     background-color: $white;
     border-bottom: 1px solid $black;
