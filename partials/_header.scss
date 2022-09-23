@@ -1,5 +1,12 @@
 @import "./variables";
 
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 .logo {
   width: 6rem;
 }

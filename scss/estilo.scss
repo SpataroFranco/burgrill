@@ -19,6 +19,7 @@ body {
   background-color: $white;
 }
 
+/********* Scss Index ********/
 .root {
   display: flex;
   flex-direction: column;
@@ -27,7 +28,6 @@ body {
   row-gap: 64px;
 }
 
-/********* Scss Index ********/
 .imgCarusel {
   height: 86vh;
   object-fit: cover;
@@ -234,6 +234,7 @@ h1 {
 /********* Scss Contacto ********/
 .tituloContacto {
   @include estiloTitulos;
+  margin-top: 6rem;
 }
 
 .parrafos {
@@ -421,7 +422,7 @@ textarea:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6rem;
+  margin: 6rem 0;
 }
 
 .card {
@@ -433,6 +434,7 @@ textarea:hover {
 /********* Scss Encuesta ********/
 .tituloEncuesta {
   @include estiloTitulos;
+  margin-top: 6rem;
 }
 
 .containerEncuesta {
@@ -476,6 +478,11 @@ textarea:hover {
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
 
+  /*Query header*/
+  header {
+    position: inherit;
+  }
+
   /*Query footer*/
   footer {
     .social {
@@ -507,6 +514,7 @@ textarea:hover {
 
   .tituloContacto {
     text-align: center;
+    margin-top: 2rem;
   }
 
   .imgContacto {
@@ -572,5 +580,11 @@ textarea:hover {
 
   .root-content {
     row-gap: 64px;
+  }
+
+  /*Query Take Away*/
+  .container-titulo {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
   }
 }

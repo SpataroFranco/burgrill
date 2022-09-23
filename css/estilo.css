@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap");
 /*Variables*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999; }
+
 .logo {
   width: 6rem; }
 
@@ -73,6 +79,7 @@ footer {
 body {
   background-color: #f7f7f7; }
 
+/********* Scss Index ********/
 .root {
   display: flex;
   flex-direction: column;
@@ -80,7 +87,6 @@ body {
   position: relative;
   row-gap: 64px; }
 
-/********* Scss Index ********/
 .imgCarusel {
   height: 86vh;
   object-fit: cover; }
@@ -240,7 +246,8 @@ h1 {
   display: flex;
   color: #2f2f2f;
   justify-content: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-top: 6rem; }
 
 .parrafos {
   display: flex;
@@ -397,7 +404,7 @@ textarea:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 6rem; }
+  margin: 6rem 0; }
 
 .card {
   background-color: #f7f7f7;
@@ -408,7 +415,8 @@ textarea:hover {
   display: flex;
   color: #2f2f2f;
   justify-content: center;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-top: 6rem; }
 
 .containerEncuesta {
   display: flex;
@@ -438,6 +446,9 @@ textarea:hover {
 
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
+  /*Query header*/
+  header {
+    position: inherit; }
   /*Query footer*/
   footer {
     text-align: center; }
@@ -456,7 +467,8 @@ textarea:hover {
     text-align: center;
     padding: 0 12px; }
   .tituloContacto {
-    text-align: center; }
+    text-align: center;
+    margin-top: 2rem; }
   .imgContacto {
     display: none; }
   .formContacto {
@@ -487,4 +499,8 @@ textarea:hover {
       .container .row .content .historia {
         margin: 0; }
   .root-content {
-    row-gap: 64px; } }
+    row-gap: 64px; }
+  /*Query Take Away*/
+  .container-titulo {
+    margin-top: 2rem;
+    margin-bottom: 6rem; } }
