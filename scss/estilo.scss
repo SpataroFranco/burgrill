@@ -431,39 +431,44 @@ textarea:hover {
 
 
 /********* Scss Encuesta ********/
-.tituloEncuesta{
+.tituloEncuesta {
   @include estiloTitulos;
 }
 
-.containerEncuesta{
+.containerEncuesta {
   display: flex;
   justify-content: center;
   padding: 0 10%;
   padding-bottom: 180px;
 }
 
-.cajaCheck{
+.cajaCheck {
   display: flex;
   flex-direction: column;
-  padding-top:50px;
-  .tituloCheck{
+  padding-top: 50px;
+
+  .tituloCheck {
     border-bottom: 1px solid $black;
     margin-bottom: 12px;
   }
-  .cuerpoCheck{
-    span{
+
+  .cuerpoCheck {
+    span {
       margin-right: 45px;
     }
-    textarea{
+
+    textarea {
       border: transparent;
     }
   }
 }
-.form-check-inline{
+
+.form-check-inline {
   margin-right: 45px;
   padding-top: 12px;
 }
-.form-check-input:checked{
+
+.form-check-input:checked {
   background-color: #dda15e;
   border-color: $color;
 }
@@ -544,6 +549,7 @@ textarea:hover {
           font-size: 48px;
         }
       }
+
       .image {
         display: none;
       }
@@ -556,6 +562,7 @@ textarea:hover {
     .row {
       .content {
         padding: 0 24px;
+
         .historia {
           margin: 0;
         }
