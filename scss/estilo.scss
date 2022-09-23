@@ -238,6 +238,9 @@ h1 {
 
 .parrafos {
   @include estiloTitulos;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-bottom: $margin-bottom*2;
 
   p {
@@ -276,19 +279,16 @@ h1 {
   }
 }
 
-input {
+.input {
   font-size: 0.875em;
   width: 100%;
   height: 50px;
   padding: 0px 15px 0px 15px;
-
   background: transparent;
   outline: none;
   color: $black;
-
   border: solid 1px $color;
   border-bottom: none;
-
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -305,13 +305,10 @@ textarea {
   width: 100%;
   height: 50px;
   padding: 0px 15px 0px 15px;
-
   background: transparent;
   outline: none;
   color: $black;
-
   border: solid 1px $color;
-
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -341,71 +338,6 @@ textarea:hover {
 
 .submit:hover {
   color: #e2dedb;
-}
-
-/********* Scss Encuesta ********/
-.tituloEncuesta {
-  @include estiloTitulos;
-}
-
-.encuesta {
-  background-color: $color;
-  padding: 12px;
-  width: 96%;
-  margin: 0 2%;
-  border-radius: 8px;
-
-  p {
-    margin: 0 20px;
-    display: inline;
-  }
-
-  div {
-    margin: 20px 0;
-  }
-}
-
-.sorteo {
-  background-color: $color;
-  text-align: center;
-  width: 40%;
-  padding: 2%;
-  color: black;
-  border-radius: 8px;
-
-  h2 {
-    color: white;
-    font-family: $fuente-cursiva;
-    margin: 8px;
-  }
-}
-
-.row {
-  section {
-    div {
-      margin-top: 10%;
-    }
-  }
-}
-
-.cont {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.fotoSorteo {
-  width: 96%;
-}
-
-.boton-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 8px;
-
-  input {
-    margin-right: 12px;
-  }
 }
 
 /********* Scss Take Away ********/
@@ -453,7 +385,6 @@ textarea:hover {
 
 .boton {
   display: flex;
-  margin: 0;
   justify-content: center;
   margin-top: 8px;
   border-radius: 24px;
@@ -498,6 +429,45 @@ textarea:hover {
   border: transparent;
 }
 
+
+/********* Scss Encuesta ********/
+.tituloEncuesta{
+  @include estiloTitulos;
+}
+
+.containerEncuesta{
+  display: flex;
+  justify-content: center;
+  padding: 0 10%;
+  padding-bottom: 180px;
+}
+
+.cajaCheck{
+  display: flex;
+  flex-direction: column;
+  padding-top:50px;
+  .tituloCheck{
+    border-bottom: 1px solid $black;
+    margin-bottom: 12px;
+  }
+  .cuerpoCheck{
+    span{
+      margin-right: 45px;
+    }
+    textarea{
+      border: transparent;
+    }
+  }
+}
+.form-check-inline{
+  margin-right: 45px;
+  padding-top: 12px;
+}
+.form-check-input:checked{
+  background-color: #dda15e;
+  border-color: $color;
+}
+
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
 
@@ -527,6 +497,7 @@ textarea:hover {
   /*Query contacto*/
   .parrafos {
     text-align: center;
+    padding: 0 12px;
   }
 
   .tituloContacto {
@@ -573,7 +544,6 @@ textarea:hover {
           font-size: 48px;
         }
       }
-
       .image {
         display: none;
       }
@@ -585,6 +555,7 @@ textarea:hover {
 
     .row {
       .content {
+        padding: 0 24px;
         .historia {
           margin: 0;
         }

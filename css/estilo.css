@@ -247,6 +247,9 @@ h1 {
   color: #2f2f2f;
   justify-content: center;
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin-bottom: 40px; }
   .parrafos p {
     text-align: center; }
@@ -276,7 +279,7 @@ h1 {
     margin-left: 8px;
     border-radius: 40px; }
 
-input {
+.input {
   font-size: 0.875em;
   width: 100%;
   height: 50px;
@@ -327,55 +330,6 @@ textarea:hover {
 .submit:hover {
   color: #e2dedb; }
 
-/********* Scss Encuesta ********/
-.tituloEncuesta {
-  display: flex;
-  color: #2f2f2f;
-  justify-content: center;
-  margin-top: 20px; }
-
-.encuesta {
-  background-color: #ec7913;
-  padding: 12px;
-  width: 96%;
-  margin: 0 2%;
-  border-radius: 8px; }
-  .encuesta p {
-    margin: 0 20px;
-    display: inline; }
-  .encuesta div {
-    margin: 20px 0; }
-
-.sorteo {
-  background-color: #ec7913;
-  text-align: center;
-  width: 40%;
-  padding: 2%;
-  color: black;
-  border-radius: 8px; }
-  .sorteo h2 {
-    color: white;
-    font-family: "Oleo Script Swash Caps", cursive;
-    margin: 8px; }
-
-.row section div {
-  margin-top: 10%; }
-
-.cont {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-.fotoSorteo {
-  width: 96%; }
-
-.boton-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 8px; }
-  .boton-container input {
-    margin-right: 12px; }
-
 /********* Scss Take Away ********/
 .row {
   padding-bottom: 64px; }
@@ -411,7 +365,6 @@ textarea:hover {
 
 .boton {
   display: flex;
-  margin: 0;
   justify-content: center;
   margin-top: 8px;
   border-radius: 24px; }
@@ -450,6 +403,39 @@ textarea:hover {
   background-color: #f7f7f7;
   border: transparent; }
 
+/********* Scss Encuesta ********/
+.tituloEncuesta {
+  display: flex;
+  color: #2f2f2f;
+  justify-content: center;
+  margin-top: 20px; }
+
+.containerEncuesta {
+  display: flex;
+  justify-content: center;
+  padding: 0 10%;
+  padding-bottom: 180px; }
+
+.cajaCheck {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px; }
+  .cajaCheck .tituloCheck {
+    border-bottom: 1px solid #2f2f2f;
+    margin-bottom: 12px; }
+  .cajaCheck .cuerpoCheck span {
+    margin-right: 45px; }
+  .cajaCheck .cuerpoCheck textarea {
+    border: transparent; }
+
+.form-check-inline {
+  margin-right: 45px;
+  padding-top: 12px; }
+
+.form-check-input:checked {
+  background-color: #dda15e;
+  border-color: #ec7913; }
+
 /********* QUERIES ********/
 @media (min-width: 320px) and (max-width: 417px) {
   /*Query footer*/
@@ -467,7 +453,8 @@ textarea:hover {
       margin-bottom: 10px; }
   /*Query contacto*/
   .parrafos {
-    text-align: center; }
+    text-align: center;
+    padding: 0 12px; }
   .tituloContacto {
     text-align: center; }
   .imgContacto {
@@ -495,7 +482,9 @@ textarea:hover {
       display: none; }
   .container {
     padding-bottom: 24px; }
-    .container .row .content .historia {
-      margin: 0; }
+    .container .row .content {
+      padding: 0 24px; }
+      .container .row .content .historia {
+        margin: 0; }
   .root-content {
     row-gap: 64px; } }

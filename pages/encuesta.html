@@ -28,50 +28,47 @@
 <!-- INICIO HEADER -->
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light nav-pills">
-    <div class="container-fluid">
-      <span>
-        <a href="../index.html">
-          <img class="navbar-brand logo logoH" src="../img/locoTrans.png" alt="logoBurGrill" />
-        </a>
-      </span>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="takeAway.html">Take away</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="ubicacion.html">Ubicacion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="encuesta.html">Encuesta</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light nav-pills">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="takeAway.html">Take away</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="encuesta.html">Encuesta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
 
-        <span class="navbar-text">
-          <a href="#" target="_blank">
-            <img src="../img/cart.svg" alt="imagen carrito" />
-          </a>
-          <a href="https://www.instagram.com/burgrill.coast/" target="_blank">
-            <img src="../img/instagram.svg" alt="imagen ig" />
-          </a>
-          <a href="https://wa.me/+5491136745145" target="_blank">
-            <img src="../img/Whatsapp.svg" alt="imagen whatsapp" />
-          </a>
-        </span>
+          <span class="navbar-text">
+            <a href="#" target="_blank">
+              <img src="../img/cart.svg" alt="imagen carrito" />
+            </a>
+            <a href="https://www.instagram.com/burgrill.coast/" target="_blank">
+              <img src="../img/instagram.svg" alt="imagen instagram" />
+            </a>
+            <a href="https://wa.me/+5491136745145" target="_blank">
+              <img src="../img/Whatsapp.svg" alt="imagen whatsapp" />
+            </a>
+          </span>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <!-- FINAL HEADER -->
 
   <!-- INICIO CONTENIDO PRINCIPAL -->
@@ -79,7 +76,7 @@
     <h1>¡Contanos! Queremos saber tu experiencia en Burgrill</h1>
   </div>
 
-  <section class="row parrafos">
+  <section class="parrafos">
     <p>
       Tus respuestas serán tratadas de forma confdencial y utilizadas
       únicamente para mejorar el servicio que te ofrecemos día a día.
@@ -87,137 +84,244 @@
     <p>¡Dejanos tus datos y participá en nuestros próximos sorteos!</p>
   </section>
 
-  <div class="contenedor">
-    <section class="encuesta">
-      <div>
-        <p>Edad:</p>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio1" value="option1" />
-          <label class="form-check-label" for="inlineRadio1">Menor de 18 años</label>
+  <section class="containerEncuesta">
+    <form action="">
+      <!-- Sexo -->
+      <div class="cajaCheck">
+        <div class="tituloCheck">
+          <span>1. Sexo</span>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio2" value="option2" />
-          <label class="form-check-label" for="inlineRadio2">Entre 19-29 años</label>
+        <div class="cuerpoCheck">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionSexo" id="inlineRadio1" value="option1" />
+            <label class="form-check-label" for="inlineRadio1">Masculino</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionSexo" id="inlineRadio2" value="option2" />
+            <label class="form-check-label" for="inlineRadio2">Femenino</label>
+          </div>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio3" value="option3" />
-          <label class="form-check-label" for="inlineRadio3">Entre 30-45 años</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio4" value="option4" />
-          <label class="form-check-label" for="inlineRadio4">Mas de 40 años</label>
-        </div>
-      </div>
-      <div>
-        <p>¿Cómo nos conociste?</p>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionConociste" id="inlineRadio1" value="option1" />
-          <label class="form-check-label" for="inlineRadio1">Recomendaciones de conocidos</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionConociste" id="inlineRadio2" value="option2" />
-          <label class="form-check-label" for="inlineRadio2">Redes sociales</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionConociste" id="inlineRadio3" value="option3" />
-          <label class="form-check-label" for="inlineRadio3">Folletos/publicidad</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionConociste" id="inlineRadio4" value="option4" />
-          <label class="form-check-label" for="inlineRadio4">Otros</label>
-        </div>
-      </div>
-      <div>
-        <p>¿Cúal es tu hamburguesa favorita?</p>
-        <select class="form-select" aria-label="Default select example">
-          <option selected></option>
-          <option value="1">Burger 1</option>
-          <option value="2">Burger 2</option>
-          <option value="3">Burger 3</option>
-          <option value="4">Burger 4</option>
-          <option value="5">Burger 5</option>
-          <option value="6">Burger 6</option>
-        </select>
-      </div>
-      <div>
-        <p>
-          ¿Cómo califcarías la relación calidad/precio de nuestros productos?
-        </p>
-        <p>Muy malo</p>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio1" value="option1" />
-          <label class="form-check-label" for="inlineRadio1">1</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio2" value="option2" />
-          <label class="form-check-label" for="inlineRadio2">2</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio1" value="option1" />
-          <label class="form-check-label" for="inlineRadio3">3</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio3" value="option3" />
-          <label class="form-check-label" for="inlineRadio4">4</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio4" value="option4" />
-          <label class="form-check-label" for="inlineRadio5">5</label>
-        </div>
-        <p>Excelente</p>
       </div>
 
-      <div>
-        <p>¿Con qué frecuencia consumis en Burgrill?</p>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio1" value="option1" />
-          <label class="form-check-label" for="inlineRadio1">Diariamente</label>
+      <!-- Edad -->
+      <div class="cajaCheck">
+        <div class="tituloCheck">
+          <span>2. Edad</span>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio2" value="option2" />
-          <label class="form-check-label" for="inlineRadio2">Varias veces en la semana</label>
+        <div class="cuerpoCheck">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio3" value="option3" />
+            <label class="form-check-label" for="inlineRadio3">Menor de 18 años</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio4" value="option4" />
+            <label class="form-check-label" for="inlineRadio4">Entre 19-25 años</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio5" value="option5" />
+            <label class="form-check-label" for="inlineRadio5">Entre 26-35 años</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio6" value="option6" />
+            <label class="form-check-label" for="inlineRadio6">Entre 36-45 años</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionEdad" id="inlineRadio7" value="option7" />
+            <label class="form-check-label" for="inlineRadio7">Más de 40 años</label>
+          </div>
         </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio3" value="option3" />
-          <label class="form-check-label" for="inlineRadio3">Una vez al mes</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio4" value="option4" />
-          <label class="form-check-label" for="inlineRadio4">Varias veces al mes</label>
-        </div>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio5" value="option5" />
-          <label class="form-check-label" for="inlineRadio5">Ocasionalmente durante el año</label>
-        </div>
-      </div>
-      <div>
-        Dejanos tu opinión o sugerencias para nuevos productos
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
 
-      <input class="btn btn-primary boton" type="submit" value="Enviar" />
-      <input class="btn btn-primary boton" type="reset" value="Borrar" />
-    </section>
-  </div>
+      <!-- Cómo nos conociste -->
+      <div class="cajaCheck">
+        <div class="tituloCheck">
+          <span>3. ¿Cómo nos conociste?</span>
+        </div>
+        <div class="cuerpoCheck">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionConociste" id="inlineRadio8" value="option8" />
+            <label class="form-check-label" for="inlineRadio8">A través de una red social</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionConociste" id="inlineRadio9" value="option9" />
+            <label class="form-check-label" for="inlineRadio9">A través de un amigo o conocido</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionConociste" id="inlineRadio10" value="option10" />
+            <label class="form-check-label" for="inlineRadio10">Folletos</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionConociste" id="inlineRadio11" value="option11" />
+            <label class="form-check-label" for="inlineRadio11">Otros</label>
+          </div>
+        </div>
+      </div>
 
-  <div class="row cont">
-    <section class="col-xl-6 col-md-6 col-sm-12 sorteo">
-      <h2>¡Dejanos tus datos y participá por combos de regalo</h2>
-      <div class="form-group">
-        <input id="email" name="email" type="text" placeholder="Email" class="form-control" />
-      </div>
-      <div class="form-group">
-        <input id="nombre" name="name" type="text" placeholder="Nombre" class="form-control" />
-      </div>
-      <div class="form-group">
-        <input id="apellido" name="name" type="text" placeholder="Apellido" class="form-control" />
-      </div>
-      <input class="btn btn-primary" type="submit" value="Enviar" />
-    </section>
-    <section class="col-xl-6 col-md-6 col-sm-12">
-      <img src="../img/hamburguesa.jpg" class="fotoSorteo" alt="img encuesta" />
-    </section>
-  </div>
+      <!-- Cómo nos conociste -->
+      <div class="cajaCheck">
+        <div class="tituloCheck">
+          <span>4. ¿Cuál es tu hamburguesa favorita?</span>
+        </div>
+        <div class="cuerpoCheck">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio12" value="option12" />
+            <label class="form-check-label" for="inlineRadio12">Burger1</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio13" value="option13" />
+            <label class="form-check-label" for="inlineRadio13">Burger2</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio14" value="option14" />
+            <label class="form-check-label" for="inlineRadio14">Burger3</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio15" value="option15" />
+            <label class="form-check-label" for="inlineRadio15">Burger4</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio16" value="option16" />
+            <label class="form-check-label" for="inlineRadio16">Burger5</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio17" value="option17" />
+            <label class="form-check-label" for="inlineRadio17">Burger6</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio18" value="option18" />
+            <label class="form-check-label" for="inlineRadio18">Burger7</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio19" value="option19" />
+            <label class="form-check-label" for="inlineRadio19">Burger8</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio20" value="option20" />
+            <label class="form-check-label" for="inlineRadio20">Burger9</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="opcionBurger" id="inlineRadio21" value="option21" />
+            <label class="form-check-label" for="inlineRadio21">Burger10</label>
+          </div>
+
+          <!-- Calidad/precio -->
+          <div class="cajaCheck">
+            <div class="tituloCheck">
+              <span>5. ¿Cómo calificarías la relación calidad/precio de nuestros productos?</span>
+            </div>
+
+            <div class="cuerpoCheck">
+              <span>Malo</span>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio22" value="option22" />
+                <label class="form-check-label" for="inlineRadio22">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio23" value="option23" />
+                <label class="form-check-label" for="inlineRadio23">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio24" value="option24" />
+                <label class="form-check-label" for="inlineRadio24">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio25" value="option25" />
+                <label class="form-check-label" for="inlineRadio25">4</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionCalidad" id="inlineRadio26" value="option26" />
+                <label class="form-check-label" for="inlineRadio26">5</label>
+              </div>
+              <span>Muy bueno</span>
+            </div>
+          </div>
+
+          <!-- Frecuencia visita -->
+          <div class="cajaCheck">
+            <div class="tituloCheck">
+              <span>6. ¿Con qué frecuencia consumis en Burgrill?</span>
+            </div>
+
+            <div class="cuerpoCheck">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio27" value="option27" />
+                <label class="form-check-label" for="inlineRadio27">Diariamente</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio28" value="option28" />
+                <label class="form-check-label" for="inlineRadio28">Una vez a la semana</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio29" value="option29" />
+                <label class="form-check-label" for="inlineRadio29">Varias veces en la semana</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio30" value="option30" />
+                <label class="form-check-label" for="inlineRadio30">Una vez al mes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio31" value="option31" />
+                <label class="form-check-label" for="inlineRadio31">Varias veces al mes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionFrecuencia" id="inlineRadio32" value="option32" />
+                <label class="form-check-label" for="inlineRadio32">Alguna vez a lo largo del año</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recomendacion -->
+          <div class="cajaCheck">
+            <div class="tituloCheck">
+              <span>7. ¿Nos recomendarías a un amigo o conocido?</span>
+            </div>
+
+            <div class="cuerpoCheck">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionRecomendacion" id="inlineRadio33" value="option33" />
+                <label class="form-check-label" for="inlineRadio33">Diariamente</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionRecomendacion" id="inlineRadio34" value="option34" />
+                <label class="form-check-label" for="inlineRadio34">Una vez a la semana</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionRecomendacion" id="inlineRadio35" value="option35" />
+                <label class="form-check-label" for="inlineRadio35">Varias veces en la semana</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionRecomendacion" id="inlineRadio36" value="option36" />
+                <label class="form-check-label" for="inlineRadio36">Una vez al mes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionRecomendacion" id="inlineRadio37" value="option37" />
+                <label class="form-check-label" for="inlineRadio37">Varias veces al mes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="opcionRecomendacion" id="inlineRadio38" value="option38" />
+                <label class="form-check-label" for="inlineRadio38">Alguna vez a lo largo del año</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sugerencia -->
+          <div class="cajaCheck">
+            <div class="tituloCheck">
+              <span>8. ¿Hay algo más que te gustaría decir o sugerirnos que no hayamos preguntado en esta
+                encuesta?</span>
+            </div>
+
+            <div class="cuerpoCheck">
+              <textarea name="textEncuesta" id="textEncuesta" cols="30" rows="10" placeholder="Sugerencia"></textarea>
+            </div>
+          </div>
+
+          <div class="boton">
+            <button class="primary-button">Enviar</button>
+          </div>
+    </form>
+  </section>
+
 
   <!-- INICIO FOOTER -->
   <footer>
